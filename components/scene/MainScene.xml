@@ -32,6 +32,9 @@
   </interface>
 
   <children>
+    <Rectangle id="rBackground" width="1920" height="1080">
+		  <Poster id="pBackgound" width="1920" height="1080" loadwidth="1920" loadDisplayMode = "scaleToZoom" loadheight="1080"/>
+    </Rectangle>
     <Group id="gPageContainer"/>
     <Timer id="toastMessageTimer" repeat="true" duration="5" />
     <Group id="gPreLoader" visible="false">

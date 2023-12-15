@@ -26,6 +26,8 @@ end sub
 
 sub SetControls()
     m.gPageContainer = m.top.findNode("gPageContainer")
+    m.rBackground = m.top.FindNode("rBackground")
+    m.pBackgound = m.top.FindNode("pBackgound")
     m.gPreLoader = m.top.findNode("gPreLoader")
     m.rectPreLoader = m.top.FindNode("RectPreLoader")
     m.bsPreloader = m.top.findNode("bsPreloader")
@@ -104,6 +106,7 @@ sub OnGetSettingsDataResponse(event as dynamic)
         appResponse = response.data.settings
         print "appResponse >>>>>>>>>>>>>>>>>>>>>> " appResponse
         if appResponse.unique_app_key <> invalid and appResponse.is_paid_subscriber = 1
+            SetUpAppConfigs(appResponse)
             showHomePage(true)
             ShowHideLoader(false)
         end if
@@ -111,6 +114,24 @@ sub OnGetSettingsDataResponse(event as dynamic)
         showErrorPage(true)
         ShowHideLoader(false)
     end if 
+end sub
+
+sub SetUpAppConfigs(appResponse as dynamic)
+    m.rBackground.color = appResponse.background_color
+    m.pBackgound.uri = appResponse.background_image
+
+    m.theme.ThemeColor = appResponse.background_color
+    m.theme.focused_button_background_color = appResponse.focused_button_background_color
+    m.theme.unfocused_button_background_color = appResponse.unfocused_button_background_color
+    m.theme.focused_button_text_color = appResponse.focused_button_text_color
+    m.theme.unfocused_button_text_color = appResponse.unfocused_button_text_color
+    m.theme.primary_text_color = appResponse.primary_text_color
+    m.theme.secondary_text_color = appResponse.secondary_text_color
+    m.theme.focus_indicator_color = appResponse.focus_indicator_color
+    m.theme.loading_indicator_color = appResponse.loading_indicator_color
+    m.theme.progressbar_color = appResponse.progressbar_color
+
+    m.global.setF(m.theme)
 end sub
 
 ' Start Deep Linking
