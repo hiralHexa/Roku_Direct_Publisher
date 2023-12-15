@@ -11,6 +11,7 @@ sub SetLocals()
     m.scene = m.top.GetScene()
     m.fonts = m.global.fonts
     m.theme = m.global.appTheme
+    m.appResponse = m.global.appResponse
     m.appConfig = m.global.appConfig
 end sub
 
@@ -23,7 +24,7 @@ sub SetControls()
 end sub
 
 sub SetupColorAndFont()
-    m.rBackground.color = m.theme.themeColor
+    m.rBackground.color = m.theme.BackGroundColor
 end sub
 
 sub SetObservers()

@@ -12,7 +12,11 @@
         <Group id="lgRowlistContentVertical" translation="[0,0]" visible = "false">
             <MaskGroup id="borderMask" maskUri = "pkg:/images/focus/horiz-mask.png">
                 <Poster id="pVideoImage" height = "225" width = "400" loadHeight = "225" loadWidth = "400" loadDisplayMode="scaleToFit" uri="pkg:/images/others/default_horizontal_poster.png"
-                            loadingBitmapUri="pkg:/images/others/default_horizontal_poster.png" failedBitmapUri="pkg:/images/others/default_horizontal_poster.png"/>
+                            loadingBitmapUri="pkg:/images/others/default_horizontal_poster.png" failedBitmapUri="pkg:/images/others/default_horizontal_poster.png">
+                    <Poster id="pDuration" width="100" height="40" uri="pkg:/images/focus/filled_r6.9.png" translation="[290,10]" visible="false">
+                        <Label id="lDuration" vertAlign = "center" horizAlign="center"/>
+                    </Poster>
+                </Poster>
                 <Group id = "gSubRowName"  visible = "false">
                     <Label id="lRowName" vertAlign = "center" horizAlign="center" height = "225" width = "400"/>
                 </Group>

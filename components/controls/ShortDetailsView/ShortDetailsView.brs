@@ -54,7 +54,6 @@ sub ItemContent_Changed()
         m.lgTitleDescription.removeChild(m.lDescription)
         m.lgTitleDescription.removeChild(m.lGenres)
         m.lgTitleDescription.removeChild(m.lRating)
-        m.lgTitleDescription.removeChild(m.lduration)
         
         textColor = m.theme.White
         if m.appConfig.isLightTheme = true
@@ -70,7 +69,7 @@ sub ItemContent_Changed()
             m.lTitle.lineSpacing = 0
             m.lTitle.horizAlign = m.alignment
             m.lTitle.font = m.fonts.openSansbold72
-            m.lTitle.color = textColor
+            m.lTitle.color = m.appResponse.primary_text_color
             m.lTitle.text = itemcontent.title
             m.lgTitleDescription.appendChild(m.lTitle)
         end if
@@ -84,7 +83,7 @@ sub ItemContent_Changed()
             m.lDescription.horizAlign = m.alignment
             m.lDescription.lineSpacing = -2
             m.lDescription.font = m.fonts.openSansReg35
-            m.lDescription.color = textColor
+            m.lDescription.color = m.appResponse.secondary_text_color
             m.lDescription.text = itemcontent.shortDescription
             m.lgTitleDescription.appendChild(m.lDescription)
         end if
@@ -98,7 +97,7 @@ sub ItemContent_Changed()
             m.lGenres.lineSpacing = 0
             m.lGenres.horizAlign = m.alignment
             m.lGenres.font = m.fonts.openSansReg35
-            m.lGenres.color = textColor
+            m.lGenres.color = m.appResponse.secondary_text_color
             m.lGenres.text = itemcontent.genres
             m.lgTitleDescription.appendChild(m.lGenres)
         end if
@@ -113,29 +112,13 @@ sub ItemContent_Changed()
                 m.lRating.lineSpacing = 0
                 m.lRating.horizAlign = m.alignment
                 m.lRating.font = m.fonts.openSansReg35
-                m.lRating.color = textColor
+                m.lRating.color = m.appResponse.secondary_text_color
                 m.lRating.text = ratingTitle.key + " : " + ratingTitle.value
             end for
             m.lgTitleDescription.appendChild(m.lRating)
         end if
 
-        if (itemcontent.content.duration <> invalid and itemcontent.content.duration <> 0 )
-            m.lduration = createObject("roSGNode", "Label")
-            m.lduration.id = "lduration"
-            m.lduration.width = m.titleWidth
-            m.lduration.wrap = true
-            m.lduration.maxLines = 1
-            m.lduration.lineSpacing = 0
-            m.lduration.horizAlign = m.alignment
-            m.lduration.font = m.fonts.openSansReg35
-            m.lduration.color = textColor
-            duration = FormatTimeStringInHHMMSS(itemcontent.content.duration)
-            m.lduration.text = "Duration : " + duration
-            m.lgTitleDescription.appendChild(m.lduration)
-        end if
-
         InitializeControlTexts()
-        print "itemcontent.typename >>>>>>>>>>>>>>>>>> " itemcontent.typename
         if itemcontent.typename = "HomeRowList"
             ISCategory()
         else

@@ -39,7 +39,7 @@ sub SetControls()
 end sub
 
 sub SetupColorAndFont()
-    m.background.color = m.theme.Black
+    m.background.color = m.appResponse.background_color
     m.searchIcon.blendColor = m.theme.UnfocusColor
     m.rectOverlay.color = m.theme.Black
     m.menuTitleLabel.color = m.theme.White
@@ -178,6 +178,7 @@ sub FetchDeepLinkingData(contentID as string)
             End For
         End If
     End For
+    m.scene.callFunc("ShowHideLoader",false)
     If m.scene.isDeeplinking = false
         m.scene.callFunc("ShowErrorDialog","No Data found!")
     else

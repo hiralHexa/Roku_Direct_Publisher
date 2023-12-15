@@ -130,7 +130,6 @@ sub SetUpAppConfigs(appResponse as dynamic)
     m.theme.focus_indicator_color = appResponse.focus_indicator_color
     m.theme.loading_indicator_color = appResponse.loading_indicator_color
     m.theme.progressbar_color = appResponse.progressbar_color
-
     m.global.setField("appTheme", m.theme)
 end sub
 
@@ -472,12 +471,10 @@ function BackKeyEvent()
 end function
 
 function OnkeyEvent(key as string, press as boolean) as boolean
-    print "MainScene : onKeyEvent : key = " key " press = " press "++++++++++++++++++++"
     result = false
     if press
         print "MainScene : onKeyEvent : key = " key " press = " press
         if key = "back"
-            print "Main Scene : Back Key Event"
             result = BackKeyEvent()
         end if
     end if

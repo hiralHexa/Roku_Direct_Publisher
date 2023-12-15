@@ -11,6 +11,7 @@ sub SetLocals()
     m.theme = m.global.appTheme
     m.fonts = m.global.fonts
     m.appConfig = m.global.appConfig
+    m.appResponse = m.global.appResponse
     m.scene = m.top.GetScene()
     m.lastFocusedRowIndex = -1
     m.lastFocusedColumnIndex = -1
@@ -27,10 +28,8 @@ sub SetupFonts()
 end sub
 
 sub SetupColor()
-    if m.appConfig.isLightTheme = true
-        m.rlHomeRowList.rowLabelColor = m.theme.Black
-    endif
-    m.rlHomeRowList.focusBitmapBlendColor = m.theme.White
+    m.rlHomeRowList.rowLabelColor = m.theme.themeColor
+    m.rlHomeRowList.focusBitmapBlendColor = m.theme.themeColor
 end sub
 
 sub SetObservers()
