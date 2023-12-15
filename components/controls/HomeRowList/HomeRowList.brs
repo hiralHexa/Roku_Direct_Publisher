@@ -40,10 +40,8 @@ end sub
 
 function OnRowListDataReceived()
     CategoryVideosItemData = m.top.content
-    print "CategoryVideosItemData >>>>>>>>>>>>>>>> " CategoryVideosItemData
     m.mainContent = createObject("roSGNode", "ContentNode")
     for each CategoryVideosData in CategoryVideosItemData
-        print "CategoryVideosData >>>>>>>>>>>>>>>>>>> " CategoryVideosData
         if CategoryVideosData.count() > 0 and CategoryVideosData.programs.count() > 0
             CategoryVideosItem = m.mainContent.CreateChild("ContentNode")
             CategoryVideosItem.id = CategoryVideosData.ID
@@ -52,7 +50,6 @@ function OnRowListDataReceived()
             if totalItem <> invalid then CategoryVideosItem.title += " ("+totalItem.ToStr()+")"
             if CategoryVideosData.programs <> invalid
                 for each item in CategoryVideosData.programs
-                    print "Item >>>>>>>>>>>>>>> " item
                     programItem = CreateObject("roSGNode", "HomeItemData")
                     programItem.id = item.id
                     programItem.title = item.title
@@ -91,6 +88,7 @@ sub RlsItems_RowItemFocused(event as object)
             rating : childNode.rating
             duration : childNode.duration   
             content : childNode.content
+            typename : childNode.typename
         }
     end if
 end sub
@@ -111,6 +109,7 @@ sub RlsItems_RowItemSelected(event as object)
             rating : childNode.rating
             duration : childNode.duration   
             content : childNode.content
+            typename : childNode.typename
         }
     end if
 end sub

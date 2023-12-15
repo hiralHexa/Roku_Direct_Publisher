@@ -104,8 +104,8 @@ sub OnGetSettingsDataResponse(event as dynamic)
     response = event.getData()
     if (response.ok AND response.data <> Invalid and response.data.settings <> invalid)
         appResponse = response.data.settings
-        print "appResponse >>>>>>>>>>>>>>>>>>>>>> " appResponse
         if appResponse.unique_app_key <> invalid and appResponse.is_paid_subscriber = 1
+            GlobalSet("appResponse",appResponse)
             SetUpAppConfigs(appResponse)
             showHomePage(true)
             ShowHideLoader(false)
@@ -131,7 +131,7 @@ sub SetUpAppConfigs(appResponse as dynamic)
     m.theme.loading_indicator_color = appResponse.loading_indicator_color
     m.theme.progressbar_color = appResponse.progressbar_color
 
-    m.global.setF(m.theme)
+    m.global.setField("appTheme", m.theme)
 end sub
 
 ' Start Deep Linking
@@ -287,7 +287,7 @@ sub ShowHideLoader(isShow as boolean, message = "Please wait..." as string, setF
     m.lPreloader.translation = "[0, 600]"
 end sub
 
-sub showHomePage(isReplace = false as boolean)
+sub showHomePage(appResponse as dynamic, isReplace = false as boolean)
     ShowHideLoader(false)
     m.HomePage = GetHomePageObject(isReplace)
     if (isReplace = true)

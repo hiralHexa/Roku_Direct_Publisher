@@ -10,8 +10,9 @@ sub SetLocals()
     m.theme = m.global.appTheme
     m.fonts = m.global.Fonts
     m.appConfig = m.global.appConfig
+    m.appResponse = m.global.appResponse
     m.scene = m.top.getScene()
-    m.Overlay = true
+    m.Overlay = false
     m.alignment= "left"
     m.titleWidth = 880
     m.descriptionWidth = 880
@@ -30,7 +31,7 @@ sub SetNodes()
 end sub
 
 sub SetupColor()
-    m.pVideoBackGround.color = m.theme.ThemeColor
+    m.pVideoBackGround.color = m.appResponse.background_color
     m.PosterOverlay.blendColor = m.theme.ThemeColor
 end sub
 
@@ -134,6 +135,7 @@ sub ItemContent_Changed()
         end if
 
         InitializeControlTexts()
+        print "itemcontent.typename >>>>>>>>>>>>>>>>>> " itemcontent.typename
         if itemcontent.typename = "HomeRowList"
             ISCategory()
         else
@@ -154,7 +156,8 @@ sub ISCategory()
     m.slButtonTextHeight = 46
     m.lgTitleDescription.translation = [65, 150]
     m.lgTitleDescription.itemSpacings = [8.0]
-    m.pVideo.uri =  m.top.itemContent.thumbnail
+    m.pVideo.uri =  m.appResponse.background_image
+    print "m.pVideo.uri >>>>>>>>>>>>>>> " m.appResponse.background_image
 end sub
 
 sub IsDetailWithGrid()
@@ -174,7 +177,7 @@ sub IsNotCategory()
     m.lgTitleDescription.itemSpacings = [5,2.0,2.0,2.0,2.0]
     m.descriptionmaxLines = 8
     if (not IsNullOrEmpty(m.top.itemContent.thumbnail))
-        m.pVideo.uri = m.top.itemContent.thumbnail
+        m.pVideo.uri = m.appResponse.background_image
     end if
 end sub
 
@@ -211,7 +214,7 @@ sub isOverlay()
     m.pVideo.loadWidth="1920"
     m.pVideo.loadHeight="1080"
     m.pVideo.translation ="[0,0]"
-    m.pVideo.loadDisplayMode="scaleToFit"
+    m.pVideo.loadDisplayMode="scaleToZoom"
     if m.Overlay = true
         if m.appConfig.isLightTheme = true
             m.PosterOverlay.uri = "pkg:/images/overlay/detail_overlay.png"

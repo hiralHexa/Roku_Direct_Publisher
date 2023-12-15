@@ -11,6 +11,7 @@ sub SetLocals()
     m.scene = m.top.GetScene()
     m.fonts = m.global.fonts
     m.theme = m.global.appTheme
+    m.appResponse = m.global.appResponse
     m.isFirstTime = true
     m.categoriesCount = 0
     m.lastFocusIndex = 0
