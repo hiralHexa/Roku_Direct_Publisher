@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="SearchGridDataItem" extends="Group">
+    <script type="text/brightscript" uri="SearchGridDataItem.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/HelpFuncs.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/FocusHandler.brs"/>
+
+    <interface>
+        <field id="itemContent" type="node" onChange="ItemContent_Changed"/>
+        <field id="focusPercent" type="float" onChange="FocusPercent_Changed" alwaysNotify="true"/>
+        <field id="itemHasFocus" type="boolean" onChange="ItemHasFocus_Changed" alwaysNotify="false"/>
+        <field id="rowListHasFocus" type="boolean" onChange="ParentHasFocus_Changed" alwaysNotify="false"/>
+        <field id="rowHasFocus" type="boolean" onChange="RowHasFocus_Changed"/>
+        <field id="gridHasFocus" type="boolean" onChange="ParentHasFocus_Changed" alwaysNotify="false"/>
+    </interface>
+
+    <children>
+        <Group id="lgGridContentVertical" translation="[0,0]" visible = "false">
+            <MaskGroup id="borderMask" maskUri = "pkg:/images/focus/horiz-mask.png" translation="[0,0]" >
+                <Poster id="pVideoImage" translation="[0,0]" Width="500" Height="281" LoadWidth="500" LoadHeight="281" loadDisplayMode="scaleToFit" uri="pkg:/images/others/default_horizontal_poster.png"
+                            loadingBitmapUri="pkg:/images/others/default_horizontal_poster.png" failedBitmapUri="pkg:/images/others/default_horizontal_poster.png"/>
+            </MaskGroup>
+            <Label id="lTitle" width="480" maxLines = "2" wrap="true" lineSpacing="3.0" horizAlign = "center" translation="[10,290]" visible="false"/>
+        </Group>
+    </children>
+</component>

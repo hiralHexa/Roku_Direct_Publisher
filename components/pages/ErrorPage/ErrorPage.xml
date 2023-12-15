@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="ErrorPage" extends="Group">
+    <script type="text/brightscript" uri="pkg:/components/pages/ErrorPage/ErrorPage.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/HelpFuncs.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/managers/FontManager.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/Globals.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/FocusHandler.brs"/>
+
+    <interface>
+    </interface>
+
+    <children>
+        <Rectangle id="rBackground" width="1920" height="1080"/>
+        <Group id="gNoItemsFound" visible="true">
+          <Label id="lNoItemsFound" text="FAILED TO GET DATA" height = "1080" width="1920" horizAlign="center" vertAlign="center"/>
+          <CustomButton id="bOKBtn" buttonWidth="100" buttonHeight="86" buttonText="OK" isFilledBgOnFocus="true" translation="[910, 598]"/>
+        </Group>
+    </children>
+</component>

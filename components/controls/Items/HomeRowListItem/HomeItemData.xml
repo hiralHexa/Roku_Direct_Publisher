@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="HomeItemData" extends="ContentNode">
+    <interface>
+        <field id="id" type="String"/>
+        <field id="title" type="String"/>
+        <field id="shortDescription" type="String"/>
+        <field id="thumbnail" type="String"/>
+        <field id="tags" type="roArray"/>
+        <field id="content" type="assocArray"/>
+        <field id="typename" type="String"/>
+        <field id="genres" type="String"/>
+        <field id="rating" type="assocArray"/>
+        <field id="vastURL" type="String"/>
+    </interface>
+</component>

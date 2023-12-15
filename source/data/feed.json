@@ -1,0 +1,1546 @@
+{
+   "providerName":"World Chamber of Commerce",
+   "lastUpdated":"2020-03-29T11:03:33-04:00",
+   "language":"en",
+   "categories":[
+      {
+         "id":"100",
+         "name":"shortFormVideos"
+      },
+      {
+         "id":"200",
+         "name":"Movies"
+      }
+   ],
+   "shortFormVideos":[
+      {
+         "id":"100",
+         "title":"Coast to Coast 2222",
+         "shortDescription":"Colin Murray, Edith Bowman and Sean Fletcher explore food festivals and markets. With tips on getting the best bang for your buck, Colin Murray, Edith Bowman and Sean Fletcher reveal secrets of farmers and producers as they explore food festivals and markets.",
+         "thumbnail":"https://ichef.bbci.co.uk/images/ic/320x180/p0f68rc3.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"http://vjs.zencdn.net/v/oceans.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"200",
+         "title":"Global Matters with Solange Warner. Interview Stan Cottrell",
+         "shortDescription":"Solange Warner, Chairman of World Chamber of Commerce, interviewing Stan Cottrell regarding his runs for peace through China, and 40 other countries",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Global%20Matters%20Stan%20Cottrell%20.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GLOBAL%20MATERS_2_STAN%20COTTRELL.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"300",
+         "title":"Stop traficking",
+         "shortDescription":"Senator Donzella James, Solange Warner, Chairman of World Chamber of Commerce, and Sabrina Crawford, Fonder of “Gigi’s House” shelter for under aged human trafficking victims, create awareness regarding the devastating crime.",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Stop%20Trafficking%20Final.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/STOP+TRAFFICKING.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"400",
+         "title":"Zorro Basketball Clinic",
+         "shortDescription":"Original Globetrotter Basketball Player, Bobby “Zorro” Hunter, teaching student how to avoid drugs",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Zorro%20Basketball%20Clinic%20.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/ZORRO%20BASKETBALL%20CLINIC%2015%20MIN.MP4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"500",
+         "title":"China Passage",
+         "shortDescription":"Stan Cottrell runs across China, for 80 days, promoting peace and friendship",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/China%20Passage.png",
+         "tags":[
+            "200"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/China%20Passage.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"600",
+         "title":"Verano no Miente",
+         "shortDescription":"Foreign Film. Thriller. Young Lovers fighting for their love to survive",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/Open%20VERANO%20NO%20MIENTE_SHORTFILM_VERSIO%CC%81N_ROKU2020-resized.png",
+         "tags":[
+            "200"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/VERANO%20NO%20MIENTE_SHORTFILM_VERSIO%CC%81N_ROKU2020.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"700",
+         "title":"China-Run",
+         "shortDescription":"Running for peace and friendship between US and China. Stan Cottrell runs for 80 days, 40 miles a day, across China.",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/China-Run.png",
+         "tags":[
+            "200"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/China-Run.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"800",
+         "title":"Global Matters, interview Consul General of the UK AM",
+         "shortDescription":"Solange Warner interviews Consul General of the UK, Anabelle Malins regarding business, investment and the Royal Family",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Consul%20of%20the%20UK/GM%20interview%20Consul%20General%20of%20the%20UK%20AM.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Consul%20of%20the%20UK/GM%20interview%20Consul%20General%20of%20the%20UK%20AM.MP4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"900",
+         "title":"Global Matters, interview with  Consul of Denmark",
+         "shortDescription":"Global Matters With Solange Warner interviewing Consul of Denmark, Chris Smith, regarding global business",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GM%20Consul%20of%20Denmark/GM%20Consul%20of%20Denmark%20Final.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GM%20Consul%20of%20Denmark/GM+Consul+of+Denmark+Final.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1000",
+         "title":"Global Matters, interview with K Alexander",
+         "shortDescription":"Global Matters with Solange Warner, interviewing Veteran Karmei Alexander. She speaks about abuse and PTSD",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GM%20Veteran%20K%20Alexander/GM%20K%20Alexander.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GM%20Veteran%20K%20Alexander/GM%20K%20Alexander.mp4",
+                  "videoType":"MP4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1100",
+         "title":"Global Matters, interview with R Marshall",
+         "shortDescription":"Global Matters with Solange Warner, interviewing Veteran Marine Roger Marshall. He speaks about PTSD",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GM%20Veteran%20R%20Marshall/GM%20Veteran%20R%20Marshall.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GM%20Veteran%20R%20Marshall/GM%20Veteran%20R%20Marshall.mp4",
+                  "videoType":"MP4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1200",
+         "title":"Destination Denang",
+         "shortDescription":"Running and winning in Denang, Vietnam. Stan Cottrell runs, creating friendship and unifying the US and Vietnam ",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/Destination%20Denang/Destination%20Denang.PNG",
+         "tags":[
+            "200"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/Destination%20Denang/DestinationDenang.mp4",
+                  "videoType":"MP4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1300",
+         "title":"Fire & Jade",
+         "shortDescription":"Learning about other cultures can be enlightening. That was Stan Cottrell running through the Orient",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/Fire%20and%20Jade/Fire%20and%20Jade.png",
+         "tags":[
+            "200"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/Fire%20and%20Jade/Fire+and+Jade.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1400",
+         "title":"Global Matters Consul General of Germany",
+         "shortDescription":"GM with Solange Warner, interviewing Consul General of Germany, Lutz Gorgens, speaking about job creation.",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Global%20Matters%20Consul%20General%20of%20Germany/Global%20Matters%20Consul%20General%20of%20Germany.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Global%20Matters%20Consul%20General%20of%20Germany/Global%20Matters%20Consul%20General%20of%20Germany.mov",
+                  "videoType":"MOV"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1500",
+         "title":"Global Matters Consul General Of France",
+         "shortDescription":"Solange Warner Interviews Consul General of France, Pascal LeDeunff about collaboration between US and France",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Global%20Matters%20Consul%20of%20France/Global%20Matters%20%20Consul%20General%20of%20France.PNG",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Global%20Matters%20Consul%20of%20France/Global+Matters+Consul+General+of+France.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1600",
+         "title":"Dr. Tony",
+         "shortDescription":"Dr Tony O’Donnell, eminence in health provides vital information on how to keep healthy at this time.",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Dr.%20Tony/Dr.%20Tony.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Dr.%20Tony/Dr%20Tony.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1700",
+         "title":"Global Matters with Solange Warner. Interview Senator James",
+         "shortDescription":"Solange Warner, Chairman of World Chamber of Commerce, interviewing Senator James regarding the environment, human trafficking and slavery",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Senator%20James%20Final.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GLOBAL%20MATTERS_1_DONZELLA%20JAMES.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1800",
+         "title":"Attorney Lauren Cohen",
+         "shortDescription":"WCCTV Attorney Lauren Cohen Interview, advising about law",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Attorney%20Lauren%20Cohen%20Interview/Lauren%20Cohen%20Inteview.PNG",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Attorney%20Lauren%20Cohen%20Interview/Lauren_Cohen_Interview_with_Thumbnail.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1900",
+         "title":"Inspirational Heroes: Clyde Strickland",
+         "shortDescription":"A very successful business man that had nothing, and became very wealthy with faith in God and very hard work",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Inspirational%20Hero%20Clyde%20Strickland%20/Inspirational%20Heroes%20Clyde%20Strickland%20.PNG",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Inspirational%20Hero%20Clyde%20Strickland%20/Inspirational%20Heroes%20Clyde%20Strickland%20.mov",
+                  "videoType":"MOV"
+               }
+            ]
+         }
+      },
+      {
+         "id":"2000",
+         "title":"Atlanta Symphony Maestro, Juan Ramirez",
+         "shortDescription":"Atlanta Symphony Orchestra Maestro, Juan Ramirez Performance",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Atlanta%20Symphony%20Maestro/Atlanta%20Symphony%20Maestro.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Atlanta%20Symphony%20Maestro/Atlanta%20Symphony%20Orchestra%20Maestro.mp4",
+                  "videoType":"MP4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"2100",
+         "title":"GM Dr. Bruce Laird",
+         "shortDescription":"Medicine Update, including alternative to cure COVID-19 and other illnesses.",
+         "thumbnail":"https://ichef.bbci.co.uk/images/ic/320x180/p0f0w9z7.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://res.cloudinary.com/dannykeane/video/upload/sp_full_hd/q_80:qmax_90,ac_none/v1/dk-memoji-dark.m3u8",
+                  "videoType":"MOV"
+               }
+            ]
+         }
+      },
+      {
+         "id":"2200",
+         "title":"Food Fest Scotland",
+         "shortDescription":"Founder, Sabrina Crawford discusses how children become vulnerable and how we can become vigilant to protect them. www.gigishouseatl.com.",
+         "thumbnail":"https://ichef.bbci.co.uk/images/ic/320x180/p0f0w9z7.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://res.cloudinary.com/dannykeane/video/upload/sp_full_hd/q_80:qmax_90,ac_none/v1/dk-memoji-dark.m3u8",
+                  "videoType":"MOV"
+               }
+            ]
+         }
+      },
+      {
+         "id":"2300",
+         "title":"Global Matters with Solange Warner. Interview Stan Cottrell",
+         "shortDescription":"Solange Warner, Chairman of World Chamber of Commerce, interviewing Stan Cottrell regarding his runs for peace through China, and 40 other countries",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Global%20Matters%20Stan%20Cottrell%20.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GLOBAL%20MATERS_2_STAN%20COTTRELL.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"2400",
+         "title":"Global Matters with Solange Warner. Interview Stan Cottrell",
+         "shortDescription":"Solange Warner, Chairman of World Chamber of Commerce, interviewing Stan Cottrell regarding his runs for peace through China, and 40 other countries",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Global%20Matters%20Stan%20Cottrell%20.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GLOBAL%20MATERS_2_STAN%20COTTRELL.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      }
+   ],
+   "movies":[
+      {
+         "id":"100",
+         "title":"Coast to Coast 2222",
+         "shortDescription":"Colin Murray, Edith Bowman and Sean Fletcher explore food festivals and markets. With tips on getting the best bang for your buck, Colin Murray, Edith Bowman and Sean Fletcher reveal secrets of farmers and producers as they explore food festivals and markets.",
+         "thumbnail":"https://ichef.bbci.co.uk/images/ic/320x180/p0f0w9z7.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"http://vjs.zencdn.net/v/oceans.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"200",
+         "title":"Global Matters with Solange Warner. Interview Stan Cottrell",
+         "shortDescription":"Solange Warner, Chairman of World Chamber of Commerce, interviewing Stan Cottrell regarding his runs for peace through China, and 40 other countries",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Global%20Matters%20Stan%20Cottrell%20.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GLOBAL%20MATERS_2_STAN%20COTTRELL.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"300",
+         "title":"Stop traficking",
+         "shortDescription":"Senator Donzella James, Solange Warner, Chairman of World Chamber of Commerce, and Sabrina Crawford, Fonder of “Gigi’s House” shelter for under aged human trafficking victims, create awareness regarding the devastating crime.",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Stop%20Trafficking%20Final.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/STOP+TRAFFICKING.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"400",
+         "title":"Zorro Basketball Clinic",
+         "shortDescription":"Original Globetrotter Basketball Player, Bobby “Zorro” Hunter, teaching student how to avoid drugs",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Zorro%20Basketball%20Clinic%20.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/ZORRO%20BASKETBALL%20CLINIC%2015%20MIN.MP4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"500",
+         "title":"China Passage",
+         "shortDescription":"Stan Cottrell runs across China, for 80 days, promoting peace and friendship",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/China%20Passage.png",
+         "tags":[
+            "200"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/China%20Passage.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"600",
+         "title":"Verano no Miente",
+         "shortDescription":"Foreign Film. Thriller. Young Lovers fighting for their love to survive",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/Open%20VERANO%20NO%20MIENTE_SHORTFILM_VERSIO%CC%81N_ROKU2020-resized.png",
+         "tags":[
+            "200"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/VERANO%20NO%20MIENTE_SHORTFILM_VERSIO%CC%81N_ROKU2020.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"700",
+         "title":"China-Run",
+         "shortDescription":"Running for peace and friendship between US and China. Stan Cottrell runs for 80 days, 40 miles a day, across China.",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/China-Run.png",
+         "tags":[
+            "200"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/China-Run.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      }
+   ],
+   "tvSpecials":[
+      {
+         "id":"100",
+         "title":"Coast to Coast 2222",
+         "shortDescription":"Colin Murray, Edith Bowman and Sean Fletcher explore food festivals and markets. With tips on getting the best bang for your buck, Colin Murray, Edith Bowman and Sean Fletcher reveal secrets of farmers and producers as they explore food festivals and markets.",
+         "thumbnail":"https://ichef.bbci.co.uk/images/ic/320x180/p0f0w9z7.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"http://vjs.zencdn.net/v/oceans.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"200",
+         "title":"Global Matters with Solange Warner. Interview Stan Cottrell",
+         "shortDescription":"Solange Warner, Chairman of World Chamber of Commerce, interviewing Stan Cottrell regarding his runs for peace through China, and 40 other countries",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Global%20Matters%20Stan%20Cottrell%20.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GLOBAL%20MATERS_2_STAN%20COTTRELL.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"300",
+         "title":"Stop traficking",
+         "shortDescription":"Senator Donzella James, Solange Warner, Chairman of World Chamber of Commerce, and Sabrina Crawford, Fonder of “Gigi’s House” shelter for under aged human trafficking victims, create awareness regarding the devastating crime.",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Stop%20Trafficking%20Final.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/STOP+TRAFFICKING.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"400",
+         "title":"Zorro Basketball Clinic",
+         "shortDescription":"Original Globetrotter Basketball Player, Bobby “Zorro” Hunter, teaching student how to avoid drugs",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Zorro%20Basketball%20Clinic%20.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/ZORRO%20BASKETBALL%20CLINIC%2015%20MIN.MP4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"500",
+         "title":"China Passage",
+         "shortDescription":"Stan Cottrell runs across China, for 80 days, promoting peace and friendship",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/China%20Passage.png",
+         "tags":[
+            "200"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/China%20Passage.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"600",
+         "title":"Verano no Miente",
+         "shortDescription":"Foreign Film. Thriller. Young Lovers fighting for their love to survive",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/Open%20VERANO%20NO%20MIENTE_SHORTFILM_VERSIO%CC%81N_ROKU2020-resized.png",
+         "tags":[
+            "200"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/VERANO%20NO%20MIENTE_SHORTFILM_VERSIO%CC%81N_ROKU2020.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"700",
+         "title":"China-Run",
+         "shortDescription":"Running for peace and friendship between US and China. Stan Cottrell runs for 80 days, 40 miles a day, across China.",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/China-Run.png",
+         "tags":[
+            "200"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/China-Run.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"800",
+         "title":"Global Matters, interview Consul General of the UK AM",
+         "shortDescription":"Solange Warner interviews Consul General of the UK, Anabelle Malins regarding business, investment and the Royal Family",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Consul%20of%20the%20UK/GM%20interview%20Consul%20General%20of%20the%20UK%20AM.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Consul%20of%20the%20UK/GM%20interview%20Consul%20General%20of%20the%20UK%20AM.MP4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"900",
+         "title":"Global Matters, interview with  Consul of Denmark",
+         "shortDescription":"Global Matters With Solange Warner interviewing Consul of Denmark, Chris Smith, regarding global business",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GM%20Consul%20of%20Denmark/GM%20Consul%20of%20Denmark%20Final.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GM%20Consul%20of%20Denmark/GM+Consul+of+Denmark+Final.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1000",
+         "title":"Global Matters, interview with K Alexander",
+         "shortDescription":"Global Matters with Solange Warner, interviewing Veteran Karmei Alexander. She speaks about abuse and PTSD",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GM%20Veteran%20K%20Alexander/GM%20K%20Alexander.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GM%20Veteran%20K%20Alexander/GM%20K%20Alexander.mp4",
+                  "videoType":"MP4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1100",
+         "title":"Global Matters, interview with R Marshall",
+         "shortDescription":"Global Matters with Solange Warner, interviewing Veteran Marine Roger Marshall. He speaks about PTSD",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GM%20Veteran%20R%20Marshall/GM%20Veteran%20R%20Marshall.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GM%20Veteran%20R%20Marshall/GM%20Veteran%20R%20Marshall.mp4",
+                  "videoType":"MP4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1200",
+         "title":"Destination Denang",
+         "shortDescription":"Running and winning in Denang, Vietnam. Stan Cottrell runs, creating friendship and unifying the US and Vietnam ",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/Destination%20Denang/Destination%20Denang.PNG",
+         "tags":[
+            "200"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/Destination%20Denang/DestinationDenang.mp4",
+                  "videoType":"MP4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1300",
+         "title":"Fire & Jade",
+         "shortDescription":"Learning about other cultures can be enlightening. That was Stan Cottrell running through the Orient",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/Fire%20and%20Jade/Fire%20and%20Jade.png",
+         "tags":[
+            "200"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/Fire%20and%20Jade/Fire+and+Jade.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1400",
+         "title":"Global Matters Consul General of Germany",
+         "shortDescription":"GM with Solange Warner, interviewing Consul General of Germany, Lutz Gorgens, speaking about job creation.",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Global%20Matters%20Consul%20General%20of%20Germany/Global%20Matters%20Consul%20General%20of%20Germany.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Global%20Matters%20Consul%20General%20of%20Germany/Global%20Matters%20Consul%20General%20of%20Germany.mov",
+                  "videoType":"MOV"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1500",
+         "title":"Global Matters Consul General Of France",
+         "shortDescription":"Solange Warner Interviews Consul General of France, Pascal LeDeunff about collaboration between US and France",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Global%20Matters%20Consul%20of%20France/Global%20Matters%20%20Consul%20General%20of%20France.PNG",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Global%20Matters%20Consul%20of%20France/Global+Matters+Consul+General+of+France.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1600",
+         "title":"Dr. Tony",
+         "shortDescription":"Dr Tony O’Donnell, eminence in health provides vital information on how to keep healthy at this time.",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Dr.%20Tony/Dr.%20Tony.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Dr.%20Tony/Dr%20Tony.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1700",
+         "title":"Global Matters with Solange Warner. Interview Senator James",
+         "shortDescription":"Solange Warner, Chairman of World Chamber of Commerce, interviewing Senator James regarding the environment, human trafficking and slavery",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Senator%20James%20Final.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GLOBAL%20MATTERS_1_DONZELLA%20JAMES.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1800",
+         "title":"Attorney Lauren Cohen",
+         "shortDescription":"WCCTV Attorney Lauren Cohen Interview, advising about law",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Attorney%20Lauren%20Cohen%20Interview/Lauren%20Cohen%20Inteview.PNG",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Attorney%20Lauren%20Cohen%20Interview/Lauren_Cohen_Interview_with_Thumbnail.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1900",
+         "title":"Inspirational Heroes: Clyde Strickland",
+         "shortDescription":"A very successful business man that had nothing, and became very wealthy with faith in God and very hard work",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Inspirational%20Hero%20Clyde%20Strickland%20/Inspirational%20Heroes%20Clyde%20Strickland%20.PNG",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Inspirational%20Hero%20Clyde%20Strickland%20/Inspirational%20Heroes%20Clyde%20Strickland%20.mov",
+                  "videoType":"MOV"
+               }
+            ]
+         }
+      },
+      {
+         "id":"2000",
+         "title":"Atlanta Symphony Maestro, Juan Ramirez",
+         "shortDescription":"Atlanta Symphony Orchestra Maestro, Juan Ramirez Performance",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Atlanta%20Symphony%20Maestro/Atlanta%20Symphony%20Maestro.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Atlanta%20Symphony%20Maestro/Atlanta%20Symphony%20Orchestra%20Maestro.mp4",
+                  "videoType":"MP4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"2100",
+         "title":"GM Dr. Bruce Laird",
+         "shortDescription":"Medicine Update, including alternative to cure COVID-19 and other illnesses.",
+         "thumbnail":"https://ichef.bbci.co.uk/images/ic/320x180/p0f0w9z7.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://res.cloudinary.com/dannykeane/video/upload/sp_full_hd/q_80:qmax_90,ac_none/v1/dk-memoji-dark.m3u8",
+                  "videoType":"MOV"
+               }
+            ]
+         }
+      },
+      {
+         "id":"2200",
+         "title":"Food Fest Scotland",
+         "shortDescription":"Founder, Sabrina Crawford discusses how children become vulnerable and how we can become vigilant to protect them. www.gigishouseatl.com.",
+         "thumbnail":"https://ichef.bbci.co.uk/images/ic/320x180/p0f0w9z7.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://res.cloudinary.com/dannykeane/video/upload/sp_full_hd/q_80:qmax_90,ac_none/v1/dk-memoji-dark.m3u8",
+                  "videoType":"MOV"
+               }
+            ]
+         }
+      }
+   ],
+   "series":[
+      {
+         "id":"100",
+         "title":"Introduction to the course",
+         "thumbnail":"https://ichef.bbci.co.uk/images/ic/320x180/p0f68rc3.jpg",
+         "seasons":[
+            {
+               "seasonNumber":1,
+               "episodes":[
+                  {
+                     "id":"100",
+                     "title":"Roku 2020 Developer Summit: Introduction",
+                     "episodeNumber":1,
+                     "content":{
+                        "dateAdded":"2020-10-15T02:32:24Z",
+                        "videos":[
+                           {
+                              "videoType":"HLS",
+                              "url":"https://ovp-selector.sr.roku.com/v1/abe94c68-6722-475e-b49d-9ea1d2f0801e?format=hls",
+                              "quality":"HD"
+                           }
+                        ],
+                        "duration":19
+                     },
+                     "thumbnail":"https://ichef.bbci.co.uk/images/ic/320x180/p0f68rc3.jpg",
+                     "shortDescription":"The Roku Developer Relations team welcomes Roku developers to the 2020 Developer Summit.",
+                     "releaseDate":"2020-10-13",
+                     "longDescription":"The Roku Developer Relations team welcomes Roku developers to the 2020 Developer Summit.",
+                     "tags":[
+
+                     ],
+                     "genres":[
+                        "educational"
+                     ]
+                  },
+                  {
+                     "id":"200",
+                     "title":"Roku 2020 Developer Summit: Welcome address",
+                     "episodeNumber":2,
+                     "content":{
+                        "dateAdded":"2020-10-14T02:32:24Z",
+                        "videos":[
+                           {
+                              "videoType":"HLS",
+                              "url":"https://ovp-selector.sr.roku.com/v1/a4d105ae-c3d7-4bf1-9191-194773454348?format=hls",
+                              "quality":"HD"
+                           }
+                        ],
+                        "duration":19
+                     },
+                     "thumbnail":"https://ichef.bbci.co.uk/images/ic/320x180/p0f68rc3.jpg",
+                     "shortDescription":"The Roku content team reviews Roku's accomplishments in 2020 and discusses the ongoing evolution and trends in streaming.",
+                     "releaseDate":"2020-10-13",
+                     "longDescription":"The Roku content team reviews Roku's accomplishments in 2020 and discusses the ongoing evolution and trends in streaming.",
+                     "tags":[
+
+                     ],
+                     "genres":[
+                        "educational"
+                     ]
+                  },
+                  {
+                     "id":"300",
+                     "title":"Roku 2020 Developer Summit: Fall updates: Hardware & OS",
+                     "episodeNumber":3,
+                     "content":{
+                        "dateAdded":"2020-10-13T02:32:24Z",
+                        "videos":[
+                           {
+                              "videoType":"HLS",
+                              "url":"https://ovp-selector.sr.roku.com/v1/111aa135-eb1f-4627-8af5-f3c29f042845?format=hls",
+                              "quality":"HD"
+                           }
+                        ],
+                        "duration":19
+                     },
+                     "thumbnail":"https://image.roku.com/ZHZscHItMTc2/roku-developer-summit-3-product-update-v1.png",
+                     "shortDescription":"The Roku Product team discusses the updated hardware lineup and new Roku OS features for Fall 2020.",
+                     "releaseDate":"2020-10-13",
+                     "longDescription":"The Roku Product team discusses the updated hardware lineup and new Roku OS features for Fall 2020.",
+                     "tags":[
+
+                     ],
+                     "genres":[
+                        "educational"
+                     ]
+                  },
+                  {
+                     "id":"400",
+                     "title":"Roku 2020 Developer Summit: Developer updates",
+                     "episodeNumber":4,
+                     "content":{
+                        "dateAdded":"2020-10-12T02:32:24Z",
+                        "videos":[
+                           {
+                              "videoType":"HLS",
+                              "url":"https://ovp-selector.sr.roku.com/v1/97d0fd92-e94d-4fea-912f-876aa9a9a6ac?format=hls",
+                              "quality":"HD"
+                           }
+                        ],
+                        "duration":1555
+                     },
+                     "thumbnail":"https://image.roku.com/ZHZscHItMTc2/roku-developer-summit-4-developer-update-v1.png",
+                     "shortDescription":"The Roku Partner Management team presents the latest updates to SceneGraph and BrightScript APIs and new features in the Developer Dashboard.",
+                     "releaseDate":"2020-10-13",
+                     "longDescription":"The Roku Partner Management team presents the latest updates to SceneGraph and BrightScript APIs and new features in the Developer Dashboard.",
+                     "tags":[
+
+                     ],
+                     "genres":[
+                        "educational"
+                     ]
+                  },
+                  {
+                     "id":"500",
+                     "title":"Roku 2020 Developer Summit: Certification update",
+                     "episodeNumber":5,
+                     "content":{
+                        "dateAdded":"2020-10-11T02:32:24Z",
+                        "videos":[
+                           {
+                              "videoType":"HLS",
+                              "url":"https://ovp-selector.sr.roku.com/v1/ed918337-7543-4a22-a578-e3accd22c57b?format=hls",
+                              "quality":"HD"
+                           }
+                        ],
+                        "duration":840
+                     },
+                     "thumbnail":"https://image.roku.com/ZHZscHItMTc2/roku-developer-summit-5-certification-update-v1.png",
+                     "shortDescription":"The Partner Management team discusses the latest updates made to the Roku channel certification criteria for Fall 2020.",
+                     "releaseDate":"2020-10-13",
+                     "longDescription":"The Partner Management team discusses the latest updates made to the Roku channel certification criteria for Fall 2020.",
+                     "tags":[
+
+                     ],
+                     "genres":[
+                        "educational"
+                     ]
+                  },
+                  {
+                     "id":"600",
+                     "title":"Roku 2020 Developer Summit: Roku Pay",
+                     "episodeNumber":6,
+                     "content":{
+                        "dateAdded":"2020-10-10T02:32:24Z",
+                        "videos":[
+                           {
+                              "videoType":"HLS",
+                              "url":"https://ovp-selector.sr.roku.com/v1/5019425a-30aa-4051-ba84-5817b06bae1d?format=hls",
+                              "quality":"HD"
+                           }
+                        ],
+                        "duration":1466
+                     },
+                     "thumbnail":"https://image.roku.com/ZHZscHItMTc2/roku-developer-summit-6-roku-pay-v1.png",
+                     "shortDescription":"The Roku Pay team describes the latest updates to Roku's payment platform.",
+                     "releaseDate":"2020-10-13",
+                     "longDescription":"The Roku Pay team describes the latest updates to Roku's payment platform.",
+                     "tags":[
+
+                     ],
+                     "genres":[
+                        "educational"
+                     ]
+                  },
+                  {
+                     "id":"700",
+                     "title":"Roku 2020 Developer Summit: Demand API",
+                     "episodeNumber":7,
+                     "content":{
+                        "dateAdded":"2020-10-09T02:32:24Z",
+                        "videos":[
+                           {
+                              "videoType":"HLS",
+                              "url":"https://ovp-selector.sr.roku.com/v1/2afb8336-f99c-496c-88d8-8c92756316cf?format=hls",
+                              "quality":"HD"
+                           }
+                        ],
+                        "duration":19
+                     },
+                     "thumbnail":"https://image.roku.com/ZHZscHItMTc2/roku-developer-summit-7-demand-api-v1.png",
+                     "shortDescription":"The Roku advertising team discusses how the Demand API helps publishers monetize video ad inventory more efficiently.",
+                     "releaseDate":"2020-10-13",
+                     "longDescription":"The Roku advertising team discusses how the Demand API helps publishers monetize video ad inventory more efficiently.",
+                     "tags":[
+
+                     ],
+                     "genres":[
+                        "educational"
+                     ]
+                  },
+                  {
+                     "id":"800",
+                     "title":"Roku 2020 Developer Summit: Growing an audience",
+                     "episodeNumber":8,
+                     "content":{
+                        "dateAdded":"2020-10-08T02:32:24Z",
+                        "videos":[
+                           {
+                              "videoType":"HLS",
+                              "url":"https://ovp-selector.sr.roku.com/v1/ab2804e1-7075-4fb8-a9de-d56020451750?format=hls",
+                              "quality":"HD"
+                           }
+                        ],
+                        "duration":19
+                     },
+                     "thumbnail":"https://image.roku.com/ZHZscHItMTc2/roku-developer-summit-8-channel-growth-v1.png",
+                     "shortDescription":"The Roku Partner Growth Management team explains how to maximize reach, engagement, and revenue through the lifecycle of a channel. The team also hosts a panel with some of the top streaming services discussing their success with building and monetizing audiences on the Roku platform.",
+                     "releaseDate":"2020-10-13",
+                     "longDescription":"The Roku Partner Growth Management team explains how to maximize reach, engagement, and revenue through the lifecycle of a channel. The team also hosts a panel with some of the top streaming services discussing their success with building and monetizing audiences on the Roku platform.",
+                     "tags":[
+
+                     ],
+                     "genres":[
+                        "educational"
+                     ]
+                  },
+                  {
+                     "id":"900",
+                     "title":"Roku 2020 Developer Summit: Panel discussion",
+                     "episodeNumber":9,
+                     "content":{
+                        "dateAdded":"2020-10-07T02:32:24Z",
+                        "videos":[
+                           {
+                              "videoType":"HLS",
+                              "url":"https://ovp-selector.sr.roku.com/v1/b30e17b0-b7d6-403f-9978-af873c5502c4?format=hls",
+                              "quality":"HD"
+                           }
+                        ],
+                        "duration":19
+                     },
+                     "thumbnail":"https://image.roku.com/ZHZscHItMTc2/roku-developer-summit-9-panel-discussion.png",
+                     "shortDescription":"The Roku Developer Relations team moderates a panel discussion with Roku engineers, who answer live questions fron the Roku developer community.",
+                     "releaseDate":"2020-10-13",
+                     "longDescription":"The Roku Developer Relations team moderates a panel discussion with Roku engineers, who answer live questions fron the Roku developer community.",
+                     "tags":[
+
+                     ],
+                     "genres":[
+                        "educational"
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ],
+   "liveFeeds":[
+      {
+         "id":"100",
+         "title":"Coast to Coast 2222",
+         "shortDescription":"Colin Murray, Edith Bowman and Sean Fletcher explore food festivals and markets. With tips on getting the best bang for your buck, Colin Murray, Edith Bowman and Sean Fletcher reveal secrets of farmers and producers as they explore food festivals and markets.",
+         "thumbnail":"https://ichef.bbci.co.uk/images/ic/320x180/p0f68rc3.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"http://vjs.zencdn.net/v/oceans.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"200",
+         "title":"Global Matters with Solange Warner. Interview Stan Cottrell",
+         "shortDescription":"Solange Warner, Chairman of World Chamber of Commerce, interviewing Stan Cottrell regarding his runs for peace through China, and 40 other countries",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Global%20Matters%20Stan%20Cottrell%20.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GLOBAL%20MATERS_2_STAN%20COTTRELL.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"300",
+         "title":"Stop traficking",
+         "shortDescription":"Senator Donzella James, Solange Warner, Chairman of World Chamber of Commerce, and Sabrina Crawford, Fonder of “Gigi’s House” shelter for under aged human trafficking victims, create awareness regarding the devastating crime.",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Stop%20Trafficking%20Final.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/STOP+TRAFFICKING.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"400",
+         "title":"Zorro Basketball Clinic",
+         "shortDescription":"Original Globetrotter Basketball Player, Bobby “Zorro” Hunter, teaching student how to avoid drugs",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Zorro%20Basketball%20Clinic%20.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/ZORRO%20BASKETBALL%20CLINIC%2015%20MIN.MP4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"500",
+         "title":"China Passage",
+         "shortDescription":"Stan Cottrell runs across China, for 80 days, promoting peace and friendship",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/China%20Passage.png",
+         "tags":[
+            "200"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/China%20Passage.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"600",
+         "title":"Verano no Miente",
+         "shortDescription":"Foreign Film. Thriller. Young Lovers fighting for their love to survive",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/Open%20VERANO%20NO%20MIENTE_SHORTFILM_VERSIO%CC%81N_ROKU2020-resized.png",
+         "tags":[
+            "200"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/VERANO%20NO%20MIENTE_SHORTFILM_VERSIO%CC%81N_ROKU2020.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"700",
+         "title":"China-Run",
+         "shortDescription":"Running for peace and friendship between US and China. Stan Cottrell runs for 80 days, 40 miles a day, across China.",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/China-Run.png",
+         "tags":[
+            "200"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/China-Run.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"800",
+         "title":"Global Matters, interview Consul General of the UK AM",
+         "shortDescription":"Solange Warner interviews Consul General of the UK, Anabelle Malins regarding business, investment and the Royal Family",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Consul%20of%20the%20UK/GM%20interview%20Consul%20General%20of%20the%20UK%20AM.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Consul%20of%20the%20UK/GM%20interview%20Consul%20General%20of%20the%20UK%20AM.MP4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"900",
+         "title":"Global Matters, interview with  Consul of Denmark",
+         "shortDescription":"Global Matters With Solange Warner interviewing Consul of Denmark, Chris Smith, regarding global business",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GM%20Consul%20of%20Denmark/GM%20Consul%20of%20Denmark%20Final.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GM%20Consul%20of%20Denmark/GM+Consul+of+Denmark+Final.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1000",
+         "title":"Global Matters, interview with K Alexander",
+         "shortDescription":"Global Matters with Solange Warner, interviewing Veteran Karmei Alexander. She speaks about abuse and PTSD",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GM%20Veteran%20K%20Alexander/GM%20K%20Alexander.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GM%20Veteran%20K%20Alexander/GM%20K%20Alexander.mp4",
+                  "videoType":"MP4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1100",
+         "title":"Global Matters, interview with R Marshall",
+         "shortDescription":"Global Matters with Solange Warner, interviewing Veteran Marine Roger Marshall. He speaks about PTSD",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GM%20Veteran%20R%20Marshall/GM%20Veteran%20R%20Marshall.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GM%20Veteran%20R%20Marshall/GM%20Veteran%20R%20Marshall.mp4",
+                  "videoType":"MP4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1200",
+         "title":"Destination Denang",
+         "shortDescription":"Running and winning in Denang, Vietnam. Stan Cottrell runs, creating friendship and unifying the US and Vietnam ",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/Destination%20Denang/Destination%20Denang.PNG",
+         "tags":[
+            "200"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/Destination%20Denang/DestinationDenang.mp4",
+                  "videoType":"MP4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1300",
+         "title":"Fire & Jade",
+         "shortDescription":"Learning about other cultures can be enlightening. That was Stan Cottrell running through the Orient",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/Fire%20and%20Jade/Fire%20and%20Jade.png",
+         "tags":[
+            "200"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Movies/Fire%20and%20Jade/Fire+and+Jade.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1400",
+         "title":"Global Matters Consul General of Germany",
+         "shortDescription":"GM with Solange Warner, interviewing Consul General of Germany, Lutz Gorgens, speaking about job creation.",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Global%20Matters%20Consul%20General%20of%20Germany/Global%20Matters%20Consul%20General%20of%20Germany.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Global%20Matters%20Consul%20General%20of%20Germany/Global%20Matters%20Consul%20General%20of%20Germany.mov",
+                  "videoType":"MOV"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1500",
+         "title":"Global Matters Consul General Of France",
+         "shortDescription":"Solange Warner Interviews Consul General of France, Pascal LeDeunff about collaboration between US and France",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Global%20Matters%20Consul%20of%20France/Global%20Matters%20%20Consul%20General%20of%20France.PNG",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Global%20Matters%20Consul%20of%20France/Global+Matters+Consul+General+of+France.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1600",
+         "title":"Dr. Tony",
+         "shortDescription":"Dr Tony O’Donnell, eminence in health provides vital information on how to keep healthy at this time.",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Dr.%20Tony/Dr.%20Tony.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Dr.%20Tony/Dr%20Tony.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1700",
+         "title":"Global Matters with Solange Warner. Interview Senator James",
+         "shortDescription":"Solange Warner, Chairman of World Chamber of Commerce, interviewing Senator James regarding the environment, human trafficking and slavery",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Senator%20James%20Final.png",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/GLOBAL%20MATTERS_1_DONZELLA%20JAMES.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1800",
+         "title":"Attorney Lauren Cohen",
+         "shortDescription":"WCCTV Attorney Lauren Cohen Interview, advising about law",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Attorney%20Lauren%20Cohen%20Interview/Lauren%20Cohen%20Inteview.PNG",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Attorney%20Lauren%20Cohen%20Interview/Lauren_Cohen_Interview_with_Thumbnail.mp4",
+                  "videoType":"mp4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"1900",
+         "title":"Inspirational Heroes: Clyde Strickland",
+         "shortDescription":"A very successful business man that had nothing, and became very wealthy with faith in God and very hard work",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Inspirational%20Hero%20Clyde%20Strickland%20/Inspirational%20Heroes%20Clyde%20Strickland%20.PNG",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Global%20Shows/Inspirational%20Hero%20Clyde%20Strickland%20/Inspirational%20Heroes%20Clyde%20Strickland%20.mov",
+                  "videoType":"MOV"
+               }
+            ]
+         }
+      },
+      {
+         "id":"2000",
+         "title":"Atlanta Symphony Maestro, Juan Ramirez",
+         "shortDescription":"Atlanta Symphony Orchestra Maestro, Juan Ramirez Performance",
+         "thumbnail":"https://swarnerbunnycdn.b-cdn.net/Atlanta%20Symphony%20Maestro/Atlanta%20Symphony%20Maestro.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://swarnerbunnycdn.b-cdn.net/Atlanta%20Symphony%20Maestro/Atlanta%20Symphony%20Orchestra%20Maestro.mp4",
+                  "videoType":"MP4"
+               }
+            ]
+         }
+      },
+      {
+         "id":"2100",
+         "title":"GM Dr. Bruce Laird",
+         "shortDescription":"Medicine Update, including alternative to cure COVID-19 and other illnesses.",
+         "thumbnail":"https://ichef.bbci.co.uk/images/ic/320x180/p0f0w9z7.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://res.cloudinary.com/dannykeane/video/upload/sp_full_hd/q_80:qmax_90,ac_none/v1/dk-memoji-dark.m3u8",
+                  "videoType":"MOV"
+               }
+            ]
+         }
+      },
+      {
+         "id":"2200",
+         "title":"Food Fest Scotland",
+         "shortDescription":"Founder, Sabrina Crawford discusses how children become vulnerable and how we can become vigilant to protect them. www.gigishouseatl.com.",
+         "thumbnail":"https://ichef.bbci.co.uk/images/ic/320x180/p0f0w9z7.jpg",
+         "tags":[
+            "100"
+         ],
+         "content":{
+            "videos":[
+               {
+                  "url":"https://res.cloudinary.com/dannykeane/video/upload/sp_full_hd/q_80:qmax_90,ac_none/v1/dk-memoji-dark.m3u8",
+                  "videoType":"MOV"
+               }
+            ]
+         }
+      }
+   ]
+}

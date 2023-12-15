@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="HomePage" extends="Group">
+    <script type="text/brightscript" uri="pkg:/components/pages/HomePage/HomePage.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/HelpFuncs.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/managers/FontManager.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/Globals.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/FocusHandler.brs"/>
+
+    <interface>
+        <field id="isDeeplinkingContentFound" type="boolean" alwaysNotify="true"/>
+        <field id="currentSelectedItem" type="int" alwaysNotify="true"/>
+        <field id="lastSelected" type="integer" alwaysNotify="true" />
+    </interface>
+
+    <children>
+        <Rectangle id="background" width="1920" height="1080"/>
+        <ShortDetailsView id="shortDetailsViewControl" visible="true"/>
+        <Group id="gHomePage">
+            <Group id="HeaderBox" translation="[0,0]" >
+                <HomeRowList id="HomeRowListControl" translation = "[0,0]"/>
+            </Group>
+        </Group>
+        <Group id="gNoItemsFound" visible="false">
+            <Poster translation="[899,520]" uri="pkg:/images/no_titles.png" width="122" height="122"/>
+            <Label id="lNoItemsFound" text="" translation="[0, 670]" width="1920" horizAlign="center" vertAlign="center"/>
+        </Group>
+        <Rectangle id = "RectOverlay" width="1920" height="1080" opacity="0.8" visible="false"/>
+        <Group id = "Menu">
+            <Group id = "searchGroup" visible = "true">
+                <Poster id = "SearchBackground" height="100" width="100" uri="pkg:/images/icons/circleDot.png" translation="[1787,13]" visible = "false"/>
+                <Poster id = "searchIcon" scaleRotateCenter = "[23,23]" height="46" width="46" uri="pkg:/images/icons/icons-search-50.png" translation="[1814,39.5]" />
+            </Group>
+             <Label id="MenuTitleLabel" height="36" width="1870" translation="[0,110]" horizAlign="right" text="Search" visible= "false"/>
+        </Group>
+    </children>
+</component>

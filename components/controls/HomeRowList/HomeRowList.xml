@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="HomeRowList" extends="Group" initialFocus="">
+    <script type="text/brightscript" uri="HomeRowList.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/HelpFuncs.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/Globals.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/FocusHandler.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/managers/FontManager.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/managers/ViewStackManager.brs"/>
+
+    <interface>
+        <field id="content" type="array" alwaysNotify="true" onChange="OnRowListDataReceived"/>
+        <field id="selectedRowItem" type="assocarray" alwaysNotify="true"/>
+        <field id="FocusPosition" type="array" alwaysNotify="true"/>
+        <field id="focusedRowItem" type="assocarray" alwaysNotify="true"/>
+        <field id="rowHasFocus" type="boolean" alwaysNotify = "true" />
+    </interface>
+
+    <children>
+        <RowList
+            id="rlHomeRowList"
+            translation="[0,720]"
+            itemComponentName="HomeRowListItem"
+            numRows = "5"
+            itemSize = "[ 1920,230]"
+            rowItemSize = "[ [410, 235] ]"
+            itemSpacing = "[0,100]"
+            rowItemSpacing="[[40,150]]"
+            rowSpacings="[90]"
+            rowHeights = "[235]"
+            drawFocusFeedback = "true"
+            drawFocusFeedbackOnTop = "true"
+            focusBitmapUri="pkg:/images/focus/ring.9.png"
+            focusXOffset = "[65.0]"
+            rowlabeloffset="[[65,10]]"
+            showRowLabel="[true]" />
+        <Poster id="pNoDataFound" Width="1920" Height="503" translation="[0,540]" LoadWidth="1920" LoadHeight="1080" loadDisplayMode="scaleToFit"
+            uri="pkg:/images/no_data_found.png" visible="false"/>
+    </children>
+</component>
+
+
+
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="CustomButton" extends="Group" >
+  <script type="text/brightscript" uri="CustomButton.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/HelpFuncs.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/managers/FontManager.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/Globals.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/FocusHandler.brs"/>
+    
+  <interface>
+        <field id="buttonWidth" type="Integer" alias="rButtonBackround.width" alwaysNotify="true" onChange="OnButtonWidthChange"/>
+        <field id="buttonHeight" type="Integer" alias="rButtonBackround.height" alwaysNotify="true" onChange="OnButtonHeightChange"/>
+        <field id="buttonText" type="String"  alwaysNotify="true" onChange="OnButtonTextChange"/>
+        <field id="focusTextColor" type="String"/>
+        <field id="unfocusTextColor" type="String" alwaysNotify="true" onChange="OnUnFocusTextColorChange"/>
+        <field id="isFilledBgOnFocus" type="Boolean" onChange="OnIsFilledBgOnFocusChange"/>
+        <field id="backgroundColor" type="String" alwaysNotify="true" onChange="OnBackgroundColorChange"/>
+        <field id="posterImage" type="string" alwaysNotify="true" onChange="OnPosterImageDataChange" />
+        <field id="focusBackgroundColor" type="String"/>
+        <field id="fontSize" type="String" alwaysNotify="true" onChange="OnFontSizeChange" />
+        <field id="focusBorderImage" type="String"/>
+        <field id="backGroundImage" type="String" alias="rButtonBackround.uri"/>
+        <field id="rightExtraPadding" type="Integer" value="0" alwaysNotify="true"/>
+        <field id="margin" type="Integer" value="10" alwaysNotify="true" onChange="OnMarginChange"/>
+  </interface>
+
+  <children>
+        <Poster id="rButtonBackround" height="0" width="0" uri="pkg:/images/focus/R5T3_35px.9.png">
+            <Poster id="btnImage" width="46" height="46" loadWidth="46" loadHeight="46" loadDisplayMode="scaleToFit" uri="" visible="false"/>
+            <Label id="slButtonText" horizAlign="center" maxlines="2" lineSpacing="0" wrap="true" vertAlign="center"/>
+        </Poster>
+  </children>
+</component>

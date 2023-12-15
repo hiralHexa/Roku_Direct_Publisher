@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="SearchPage" extends="Group">
+    <script type="text/brightscript" uri="SearchPage.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/HelpFuncs.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/FocusHandler.brs"/>
+
+    <interface>
+    </interface>
+
+    <children>
+        <Poster id = "bgPoster" width = "1920" height = "1080" loadDisplayMode="scaleToFit" loadWidth= "1920" loadHeight="1080"/>
+        <Rectangle id="rBackground" width="1920" height="1080" opacity="0.8"/>
+        <Poster id="plogo" width="430" height="104" loadWidth="430" loadHeight="104" uri="pkg:/images/brand/logo.png" loadDisplayMode="scaleToFit" translation="[35,35]"/>
+
+        <Label id="lKeyBoardTitle" text="What you are looking for?" translation="[90, 150]" horizAlign="left" vertAlign="center"/>
+        <MiniKeyboard id = "miniKeyboard" translation="[65,230]"/>
+        <Group id="gRightSection">
+            <Label id="lVideoTitles" width="1200" translation="[680, 152]" horizAlign="left" wrap="true" maxLines="1" vertAlign="left"/>
+            <Label id="lVideoDescription" width="1200" translation="[680, 220]" horizAlign="left" wrap="true" linespacing="1" maxLines="2"/>
+            <CustomMarkupGrid id="SearchResultsProgramsGridControl" numberOfColumns="2" numberOfRows="3" translation="[680, 320]" visible="false"/>
+            <Label id="lSearchHint" text="Search results will be displayed here!" Width="1000" Height="50" horizAlign="center" vertAlign="center"
+                translation="[800,500]"/>
+            <Label id="lNoItems" text="No data found." Width="1000" Height="50" horizAlign="center" vertAlign="center"
+                translation="[800,500]" visible="false"/>
+        </Group>
+        <Group id="gPreLoader" visible="false">
+            <BusySpinner id="bsPreloader" control="start" clockwise="true" spinInterval="0.8"/>
+            <Label id="lPreloader" color="#FFFFFF" horizAlign="center" width="1240"/>
+        </Group>
+    </children>
+</component>

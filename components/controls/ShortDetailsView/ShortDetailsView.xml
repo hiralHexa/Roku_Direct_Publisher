@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="ShortDetailsView" extends="Group">
+    <script type="text/brightscript" uri="ShortDetailsView.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/HelpFuncs.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/FocusHandler.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/HtmlHelper.brs"/>
+
+    <interface>
+        <field id="itemContent" type="assocarray" alwaysNotify="true" onChange="ItemContent_Changed"/>
+    </interface>
+    <children>
+        <Group id="gDetails">
+            <Rectangle id = "pVideoBackGround" width="1920" height="1080" opacity="0.9" visible="true">
+            <Poster id="pVideo" width="1920" height="1080" loadWidth="1920" loadHeight="1080" loadDisplayMode="scaleToFit"/>  
+            </Rectangle>
+            <Animation id = "showAnimation" duration = "1" easeFunction = "linear" >
+                <FloatFieldInterpolator key = "[ 0.0, 0.5, 1.0 ]" keyValue = "[ 0.0, 0.5, 1.0 ]"  fieldToInterp = "pVideo.opacity" />
+            </Animation>
+            <Animation id = "hideAnimation" duration = "0.5" easeFunction = "linear" >
+                <FloatFieldInterpolator key = "[ 0.0, 0.5, 1.0 ]" keyValue = "[ 1.0, 0.5, 0.0 ]" fieldToInterp = "pVideo.opacity" />
+            </Animation>
+            <Poster id="PosterOverlay" width="1920" height="1080" visible = "false" />
+            <Rectangle id = "RectOverlay" width="1920" height="1080" opacity="0.7" visible="false"/>
+            <Group id="topSection">
+                <LayoutGroup id="lgTitleDescription"  layoutDirection="vert" itemSpacings="10" translation="[65, 150]"/>
+            </Group>
+        </Group>
+    </children>
+</component>

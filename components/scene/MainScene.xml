@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="MainScene" extends="Scene">
+  <script type="text/brightscript" uri="pkg:/components/scene/MainScene.brs"/>
+  <script type="text/brightscript" uri="pkg:/source/helpers/HelpFuncs.brs"/>
+  <script type="text/brightscript" uri="pkg:/source/helpers/Globals.brs"/>
+  <script type="text/brightscript" uri="pkg:/source/helpers/FocusHandler.brs"/>
+  <script type="text/brightscript" uri="pkg:/source/managers/FontManager.brs"/>
+  <script type="text/brightscript" uri="pkg:/source/managers/ViewStackManager.brs"/>
+  <interface>
+    <field id="outRequest" type="AssocArray"/>
+    <field id="videoData" type="roArray"/>
+    <field id="allVideos" type="roArray" alwaysNotify = "true"/>
+    <field id="categoriesData" type="roArray"/>
+    <field id="exitCalled" type="boolean" alwaysNotify = "true" />
+    <field id="sentLaunchCompleteEvent" type="boolean" alwaysNotify="true" onChange="sendAppLaunchCompleteBeacon"/>
+		<field id="sentAppDialogInitiateEvent" type="boolean" alwaysNotify="true" onChange="sendAppDialogInitiateBeacon" />
+	  <field id="sentAppDialogCompleteEvent" type="boolean" alwaysNotify="true" onChange="sendAppDialogCompleteBeacon" />
+    <field id="deepLinkingContentId" type="string"/>
+    <field id="deepLinkingMediaType" type="string"/>
+    <field id="deeplinkMsg" type="string" alwaysNotify="true" onChange="ChangeDeeplinkDialogMessage"/>
+    <field id="deepLinkingLand" type="boolean" alwaysNotify="true"/>
+    <field id="isDeeplinking" type="boolean" alwaysNotify="true"/>
+    <function name ="CloseDeeplinkDialog"/>
+    <function name="HandleInputEvent"/>
+    <function name="ShowErrorDialog"/>
+    <function name="showHomePage"/>
+    <function name="StartVideo"/>
+    <function name= "ShowHideLoader"/>
+    <function name = "ShowSearchPage" />
+
+    <field id = "BacktoHomePage" type="boolean" alwaysNotify = "true" />
+  </interface>
+
+  <children>
+    <Group id="gPageContainer"/>
+    <Timer id="toastMessageTimer" repeat="true" duration="5" />
+    <Group id="gPreLoader" visible="false">
+      <Rectangle id="RectPreLoader" width="1920" height="1080"/>
+      <BusySpinner id="bsPreloader" translation="[860,420]" control="start" clockwise="true" spinInterval="0.8"/>
+      <Label id="lPreloader" translation="[0,600]" horizAlign="center" width="1920"/>
+    </Group>
+    <Poster id= "Logo" uri="pkg:/images/brand/logo.png" width="326" height="56" loadwidth="326" loadheight="56" translation="[65,65]" visible="false"/>
+    <Group id="ToastMsgBox" visible="false">
+			<Rectangle id="RectToastMsgBox" width="1920" height="1080" opacity="0.7"/>
+			<Poster id="pLogo" uri="pkg:/images/brand/logo.png" opacity="1" width="150" height="50" loadwidth="150" loadDisplayMode = "scaleToZoom" loadheight="50" translation="[745,250]"/>
+			<Label id="ToastMsgText" width="1720" translation="[100, 370]" wrap="true" maxLines="2" horizAlign="center"/>
+		</Group>
+  </children>
+</component>

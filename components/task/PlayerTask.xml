@@ -1,0 +1,22 @@
+<?rokuml version="1.0" encoding="utf-8" ?>
+
+<!-- a Task handling the playback loop of both content abd ad -->
+<component name="PlayerTask" extends="Task">
+
+<script type="text/brightscript" uri="PlayerTask.brs" />
+<script type="text/brightscript" uri="pkg:/source/helpers/Globals.brs"/>
+<script type="text/brightscript" uri="pkg:/source/helpers/HelpFuncs.brs"/>
+
+  <interface>
+    <field id="video" type="node" />
+    <field id="videodata" type="AssocArray" />
+    <field id="adsurl" type="string" />
+    <field id="isAdPlaying" type="boolean" />
+    <field id="bookmark" type="float" />
+    <field id="currentPosition" type="integer" />
+    <field id="currentState" type="string" />
+    <field id="stopped" type="boolean" />
+    
+  </interface>
+
+</component>

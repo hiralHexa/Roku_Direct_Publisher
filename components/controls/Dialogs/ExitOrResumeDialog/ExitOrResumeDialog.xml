@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="ExitOrResumeDialog" extends="Group" initialFocus="yesBtn">
+    <script type="text/brightscript" uri="ExitOrResumeDialog.brs"/>
+
+    <interface>
+        <field id="selectedButton" type="string" alwaysNotify="true"/>
+        <field id="dialogData" type="assocArray" alwaysNotify="true"/>
+        <field id="isResumeBox" type="boolean" value="false" alwaysNotify="true" onChange="OnIsResumeBoxChanged"/>
+        <field id="isExitBox" type="boolean" value="false" alwaysNotify="true" onChange="OnIsResumeBoxChanged"/>
+    </interface>
+
+    <children>
+      <Group id="exitorResumeConfirmationGrp" opacity="0">
+        <Rectangle id="rectBackground" translation="[0,0]" width="1920" height="1080" opacity="0"/>
+        <Poster id="pShowPoster" uri="pkg:/images/assets/poster_fhd.png" width="540" height="405" translation="[690, 150]"/>
+  
+        <Label id="msg_title" width="1920" translation="[0, 590]" wrap="true"  maxLines="3" lineSpacing="0" vertAlign="center" horizAlign="center"/>
+        <Label id="exitResume_message" width="1920" translation="[0, 640]" wrap="true" maxLines="3" lineSpacing="0" vertAlign="center" horizAlign="center"/>
+        <Poster id="pYesBtnBorder" width= "400" height= "78" uri="pkg:/images/focus/5pxRoundRect.9.png" translation="[525, 825]" loadDisplayMode="scaleToFit"/>
+        <Label id="yesBtn" width= "400" height= "78" text="Yes" wrap="false" vertAlign="center" translation="[525, 825]"  horizAlign="center"/>
+        <Poster id="pNoBtnBorder" width= "400" height= "78" uri="pkg:/images/focus/5pxRoundRect.9.png" translation="[975, 825]" loadDisplayMode="scaleToFit"/>
+        <Label id="noBtn" width= "400" height= "78" text="No" wrap="false" vertAlign="center" translation="[975, 825]" horizAlign="center"/>
+      </Group>
+      
+      <SequentialAnimation id="showAnimation">
+          <Animation duration="0.1" easeFunction="linear">
+            <FloatFieldInterpolator key="[0, 0.3, 0.6, 1]" keyValue="[ 0.3, 0.5, 0.7, 0.9]" fieldToInterp="rectBackground.opacity"/>
+          </Animation>
+
+          <Animation duration="0.3" easeFunction="linear">
+            <FloatFieldInterpolator key="[0, 0.3, 0.6, 1]" keyValue="[ 0.3, 0.5, 0.7, 1]" fieldToInterp="exitorResumeConfirmationGrp.opacity"/>
+          </Animation>
+      </SequentialAnimation>
+    </children>
+</component>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="APIAction" extends="Task"	xsi:noNamespaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd">
+    <script type="text/brightscript" uri="APIAction.brs"/>
+
+    <script type="text/brightscript" uri="pkg:/source/apis/API.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/apis/BaseRequests.brs"/>
+
+    <script type="text/brightscript" uri="pkg:/source/helpers/HelpFuncs.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/managers/FontManager.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/Globals.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/ContentHelper.brs"/>
+
+    <interface>
+        <field id="vidID" type="string"/>
+        <field id="videoID" type="string"/>
+        <field id="CategoriesData" type="array"/>
+        <field id="IsFeaturedMovie" type="boolean"/>
+        <field id="term" type="string"/>
+        <field id="videoInfo" type="assocarray"/>
+        <field id="playVideo" type="boolean"/>
+        <field id="CategoryId" type="string"/>
+        <field id="Email" type="string"/>
+
+        <field id="result" type="assocarray"/>
+        <field id="resultData" type="array"/>
+    </interface>
+</component>

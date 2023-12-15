@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="ProgramItemData" extends="ContentNode">
+    <interface>
+        <field id="ID" type="string"/>
+        <field id="title" type="string"/>
+        <field id="horizontal_preview" type="string"/>
+        <field id="full_preview" type="string"/>
+        <field id="landscape_preview" type="string"/>
+        <field id="description" type="string"/>
+        <field id="LengthInSeconds" type="int"/>
+        <field id="Featuring" type="string"/>
+        <field id="Tags" type="string"/>
+        <field id="videoURL" type="string"/>
+        <field id="is_live" type="boolean" value="false"/>
+        <field id="SKULine" type="string"/>
+        <field id="MediaType" type="string"/>
+        <field id="AccessType" type="string"/>
+        <field id="PurchasedEndDate" type="String"/>
+        <field id="currentProductType" type="string"/>
+        <field id="SelectedPackage" type="string"/>
+        <field id="IsFree" type="string"/>
+        <field id="IsPurchased" type="integer"/>
+    </interface>
+</component>

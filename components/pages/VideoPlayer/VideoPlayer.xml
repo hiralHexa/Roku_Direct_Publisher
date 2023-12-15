@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="VideoPlayer" extends="Group">
+    <script type="text/brightscript" uri="VideoPlayer.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/HelpFuncs.brs"/>
+
+    <interface>
+        <field id="videoData" type="AssocArray" alwaysNotify="true"/>
+        <field id="isVideoPlayerStopped" type="boolean" alwaysNotify="true"/>
+        <function name="ClosePlayer"/>
+    </interface>
+
+    <children>
+        <Video id="VideoPlayer" width="1920" height="1080"/>
+        <Group id="gVideoAd" translation="[40,40]" visible="false">
+            <poster id="pAdBackground" width="0" height="50" uri="pkg:/images/focus/filled.9.png" opacity="1">
+                <Label id="lAdCounter" text="" height="50" width="0" translation="[27,0]" vertAlign="center"/>
+            </poster>
+        </Group>
+        <Group id="gPreLoader" visible="false">
+            <Rectangle id="RectPreLoader" width="1920" height="1080"/>
+            <BusySpinner id="bsPreloader" translation="[860,420]" control="start" clockwise="true" spinInterval="0.8"/>
+            <Label id="lPreloader" translation="[0,600]" horizAlign="center" width="1920"/>
+        </Group>
+    </children>
+</component>

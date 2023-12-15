@@ -1,0 +1,36 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name = "CustomMarkupGrid" extends = "Group" initialFocus="customMarkupGrid" >
+    <script type="text/brightscript" uri="CustomMarkupGrid.brs"/>
+
+    <interface>
+        <field id="gridContent" type="roArray" alwaysNotify="true" onChange="onIsGridUpdated"/>
+        <field id="customMarkupGrid" type="node"/>
+        <field id="numberOfColumns" type="string" value="3" alias="customMarkupGrid.numColumns" alwaysNotify="true"/>
+        <field id="indicatorWidth" type="integer" value="1540" alias="lCurrentIndexIndicator.Width,lTitleName.width,lNoItemsAvailable.width" alwaysNotify="true" />
+        <field id="numberOfRows" type="string" value="3" alias="customMarkupGrid.numRows" alwaysNotify="true"/>
+        <field id="gridTitle" type="string" value="" alias="lTitleName.text" alwaysNotify="true" onChange="onGridTitleChange"/>
+        <field id="currentFocusedItemIndex" value="-1" type="integer"/>
+        <field id="totalGridItems" value="0" type="integer" onChange="onTotalCountChanged"/>
+        <field id="isGridUpdated" value="false" alwaysNotify="true" type="boolean"/>
+        <field id="makeLabelVisible" value="false" alwaysNotify="true" type="boolean"/>
+    </interface>
+
+    <children >
+        <Label id="lTitleName" translation="[0,0]" width="1145" height="48" vertAlign="center" horizAlign="left" />
+        <Label id="lCurrentIndexIndicator" Width="1145" Height="50" horizAlign="right" vertAlign="center" translation="[200,0]" />
+        <MarkupGrid
+          id = "customMarkupGrid"
+          itemComponentName = "ProgramItem"
+          itemSize = "[510, 291]"
+          itemSpacing = "[50 100]"
+          numColumns = "2"
+          numRows = "5"
+          drawFocusFeedback = "true"
+          vertFocusAnimationStyle = "fixedFocus"
+          focusBitmapUri="pkg:/images/focus/ring.9.png"
+          focusFootprintBlendColor="#0099BC"
+          focusBitmapBlendColor="#0099BC"
+          translation = "[0,50]"/>
+        <Label id="lNoItemsAvailable" text="No videos are available!" translation="[50,315]" width="1350" height="48" vertAlign="center" horizAlign="center" visible="false"/>
+    </children>
+</component>

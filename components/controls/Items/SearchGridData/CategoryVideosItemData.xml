@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="CategoryVideosItemData" extends="ContentNode">
+    <interface>
+        <field id="title" type="string" />
+        <field id="long_description" type="string" />
+        <field id="description" type="string" />
+        <field id="image_url" type="string" />
+        <field id="videoId" type="integer" />
+        <field id="CategoryID" type="integer" />
+        <field id="categoryName" type="string" />
+        <field id="vastURL" type="string" />        
+    </interface>
+</component>

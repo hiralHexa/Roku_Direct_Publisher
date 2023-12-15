@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="HomeRowListItem" extends="Group">
+    <script type="text/brightscript" uri="HomeRowListItem.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/HelpFuncs.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/helpers/FocusHandler.brs"/>
+    <interface>
+        <field id="itemContent" type="node" onChange="ItemContent_Changed"/>
+        <field id="width" type="float" />
+  		<field id="height" type="float"/>
+    </interface>
+    <children>
+        <Group id="lgRowlistContentVertical" translation="[0,0]" visible = "false">
+            <MaskGroup id="borderMask" maskUri = "pkg:/images/focus/horiz-mask.png">
+                <Poster id="pVideoImage" height = "225" width = "400" loadHeight = "225" loadWidth = "400" loadDisplayMode="scaleToFit" uri="pkg:/images/others/default_horizontal_poster.png"
+                            loadingBitmapUri="pkg:/images/others/default_horizontal_poster.png" failedBitmapUri="pkg:/images/others/default_horizontal_poster.png"/>
+                <Group id = "gSubRowName"  visible = "false">
+                    <Label id="lRowName" vertAlign = "center" horizAlign="center" height = "225" width = "400"/>
+                </Group>
+            </MaskGroup>
+        </Group>
+        <Label id = "itemLabel" height = "80" visible = "false"/>
+    </children>
+</component>

@@ -1,0 +1,29 @@
+{
+    "settings": {
+      "app_name": "Roku SDK Template - Client 1 - App 1",
+      "unique_app_key": "HHAHAHA",
+      "is_paid_subscriber": 1,
+    
+      "background_image": "https://img.lovepik.com/background/20211021/large/lovepik-abstract-blue-background-image_401327580.jpg",
+      "background_color": "#10475c",
+      "banner_image": "https://cdn.freebiesupply.com/logos/large/2x/watermark-logo-png-transparent.png",
+      "app_logo": "https://hexabrain.in/clients/bhm/pkg-generator/logo.png",
+  
+      "vast_url": "https://pubads.g.doubleclick.net/gampad/ads?iu=/21775744923/external/vmap_ad_samples&sz=640x480&cust_params=sample_ar%3Dpremidpostpod&ciu_szs=300x250&gdfp_req=1&ad_rule=1&output=vmap&unviewed_position_start=1&env=vp&impl=s&cmsid=496&vid=short_onecue&correlator=",
+
+      "feedUrl" : "https://devtools.web.roku.com/samples/roku-developers-feed-v1-rdp.json",
+      
+      "focused_button_background_color": "#d9720b",
+      "unfocused_button_background_color": "#87827e",
+      "focused_button_text_color": "#170e06",
+      "unfocused_button_text_color": "#FFFFFF",
+      "primary_text_color": "#ebd1b9",
+      "secondary_text_color": "#ded8d3",
+      "focus_indicator_color": "#8ed8f5",
+      "loading_indicator_color": "#ffffff",
+      "progressbar_color": "#ff0000" 
+    },
+    "success": 1,
+    "message": ""
+  }
+  

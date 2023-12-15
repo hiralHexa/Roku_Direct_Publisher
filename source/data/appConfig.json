@@ -1,0 +1,6 @@
+{
+  "baseUrl": "https://devtools.web.roku.com/samples/roku-developers-feed-v1-rdp.json",
+  "isProdcution": true,
+  "isLightTheme": false,
+  "isDetailWithGrid": false
+}

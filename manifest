@@ -1,0 +1,15 @@
+bs_libs_required=roku_ads_lib
+title= Developer
+major_version=02
+minor_version=01
+build_version=091420232
+mm_icon_focus_fhd=pkg:/images/asset/icon_focus_fhd.png
+mm_icon_focus_hd=pkg:/images/asset/icon_focus_hd.png
+mm_icon_focus_sd=pkg:/images/asset/icon_focus_sd.png
+splash_screen_fhd=pkg:/images/asset/splash_fhd.jpg
+splash_screen_hd=pkg:/images/asset/splash_hd.jpg
+splash_screen_sd=pkg:/images/asset/splash_sd.jpg
+splash_min_time=2000
+ui_resolutions=fhd
+uri_resolution_autosub=$$RES$$,sd,hd,fhd
+supports_input_launch=1
