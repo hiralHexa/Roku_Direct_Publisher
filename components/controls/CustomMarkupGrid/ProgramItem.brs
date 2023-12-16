@@ -51,11 +51,10 @@ sub ItemContent_Changed()
     if itemcontent.content.duration <> invalid and itemcontent.content.duration > 0
         m.lDuration.text = FormatTimeStringInHHMMSS(itemcontent.content.duration)
         m.lDuration.font = m.fonts.openSansBold25
-        if (m.appResponse.focused_button_text_color <> invalid and m.appResponse.focused_button_text_color <> "") and (m.appResponse.focused_button_background_color <> invalid and m.appResponse.focused_button_background_color <> "")
-            m.lDuration.color = m.appResponse.focused_button_text_color
-            m.pDuration.blendColor = m.appResponse.focused_button_background_color
-            m.pDuration.visible = true
-        end if 
+        m.lDuration.color = m.theme.UnfocusColor
+        m.pDuration.blendColor = m.theme.boxGrayLight
+        m.pDuration.visible = true
+        m.lDuration.visible = true
     end if
 
 end sub

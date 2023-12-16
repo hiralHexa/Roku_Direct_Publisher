@@ -12,14 +12,16 @@
     <children>
       <Group id="exitorResumeConfirmationGrp" opacity="0">
         <Rectangle id="rectBackground" translation="[0,0]" width="1920" height="1080" opacity="0"/>
-        <Poster id="pShowPoster" uri="pkg:/images/assets/poster_fhd.png" width="540" height="405" translation="[690, 150]"/>
+        <Poster id="pShowPoster" uri="pkg:/images/assets/poster_fhd.png"/>
   
         <Label id="msg_title" width="1920" translation="[0, 590]" wrap="true"  maxLines="3" lineSpacing="0" vertAlign="center" horizAlign="center"/>
         <Label id="exitResume_message" width="1920" translation="[0, 640]" wrap="true" maxLines="3" lineSpacing="0" vertAlign="center" horizAlign="center"/>
-        <Poster id="pYesBtnBorder" width= "400" height= "78" uri="pkg:/images/focus/5pxRoundRect.9.png" translation="[525, 825]" loadDisplayMode="scaleToFit"/>
-        <Label id="yesBtn" width= "400" height= "78" text="Yes" wrap="false" vertAlign="center" translation="[525, 825]"  horizAlign="center"/>
-        <Poster id="pNoBtnBorder" width= "400" height= "78" uri="pkg:/images/focus/5pxRoundRect.9.png" translation="[975, 825]" loadDisplayMode="scaleToFit"/>
-        <Label id="noBtn" width= "400" height= "78" text="No" wrap="false" vertAlign="center" translation="[975, 825]" horizAlign="center"/>
+        <Poster id="pYesBtnBorder" width= "400" height= "78" uri="pkg:/images/focus/5pxRoundRect.9.png" translation="[525, 825]" loadDisplayMode="scaleToFit">
+          <Label id="yesBtn" width= "400" height= "78" text="Yes" wrap="false" vertAlign="center" horizAlign="center"/>
+        </Poster>
+        <Poster id="pNoBtnBorder" width= "400" height= "78" uri="pkg:/images/focus/5pxRoundRect.9.png" translation="[975, 825]" loadDisplayMode="scaleToFit">
+          <Label id="noBtn" width= "400" height= "78" text="No" wrap="false" vertAlign="center" horizAlign="center"/>
+        </Poster>
       </Group>
       
       <SequentialAnimation id="showAnimation">

@@ -148,6 +148,9 @@ sub ItemContent_Changed()
             IsNotCategory()
         end if
     end if
+    if m.scene.detailTranslation <> invalid
+        m.lgTitleDescription.translation = [65,m.scene.detailTranslation + 20]
+    end if 
 end sub
 
 sub OnAnimation()
@@ -160,7 +163,6 @@ end sub
 sub ISCategory()
     m.slButtonTextwidth = 265
     m.slButtonTextHeight = 46
-    m.lgTitleDescription.translation = [65, 150]
     m.lgTitleDescription.itemSpacings = [8.0]
     if (m.theme.background_image <> invalid and m.theme.background_image <> "")
         m.pVideo.uri =  m.theme.background_image

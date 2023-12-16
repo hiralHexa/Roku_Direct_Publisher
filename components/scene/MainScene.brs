@@ -34,6 +34,7 @@ sub SetControls()
     m.lPreloader = m.top.findNode("lPreloader")
     m.pSplash = m.top.findNode("pSplash")
     m.logo = m.top.FindNode("Logo")
+    m.pTostMsgLogo = m.top.findNode("pTostMsgLogo")
 end sub
 
 sub SetupColor()
@@ -106,13 +107,14 @@ sub OnGetSettingsDataResponse(event as dynamic)
         appResponse = response.data.settings
         if appResponse.unique_app_key <> invalid and appResponse.is_paid_subscriber = 1
             GlobalSet("appResponse",appResponse)
+            SetManifestData()
             SetUpAppConfigs(appResponse)
             showHomePage(true)
             ShowHideLoader(false)
         end if
     else
-        ' showHomePage(true)
-        showErrorPage(true)
+        showHomePage(true)
+        ' showErrorPage(true)
         ShowHideLoader(false)
     end if 
     if (m.theme.background_color <> invalid and m.theme.background_color <> "") and (m.theme.background_image <> invalid and m.theme.background_image <> "")
@@ -123,8 +125,29 @@ sub OnGetSettingsDataResponse(event as dynamic)
     end if
 end sub
 
+sub SetManifestData()
+    m.appResponse = m.global.appResponse
+    manifest = ReadAsciiFile("pkg:/manifest")
+    lines = manifest.Tokenize(chr(10))
+    aa = {}
+    for each line in lines
+        entry = line.Tokenize("=")
+        if entry[0] = "title"
+            entry[1] = m.appResponse.app_name
+        else if entry[0] = "mm_icon_focus_fhd"
+            entry[1] = m.appResponse.app_logo
+        end if
+        aa.AddReplace(entry[0],entry[1].Trim())
+    end for
+    print aa
+end sub
+
 sub SetUpAppConfigs(appResponse as dynamic)
-    m.logo.uri = appResponse.app_logo
+    if appResponse.app_logo <> invalid and appResponse.app_logo <> ""
+        m.pTostMsgLogo.uri = appResponse.app_logo
+        m.logo.uri = appResponse.app_logo
+        m.top.detailTranslation = m.logo.translation[1] + m.logo.height
+    end if
     m.theme.background_image = appResponse.background_image
     m.theme.background_color = appResponse.background_color
     m.theme.focused_button_background_color = appResponse.focused_button_background_color

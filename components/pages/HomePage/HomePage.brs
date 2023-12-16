@@ -43,12 +43,10 @@ end sub
 sub SetupColorAndFont()
     if (m.theme.background_color <> invalid and m.theme.background_color <> "")
         m.background.color = m.theme.background_color
-        m.SearchBackground.blendColor = m.theme.background_color
     else
         m.background.color = m.theme.ThemeColor
-        m.SearchBackground.blendColor = m.theme.ThemeColor
     end if 
-    m.SearchBackground.blendColor = m.theme.Gray
+    m.SearchBackground.blendColor = m.theme.boxGrayLight
     m.searchIcon.blendColor = m.theme.UnfocusColor
     m.rectOverlay.color = m.theme.Black
     m.menuTitleLabel.color = m.theme.White

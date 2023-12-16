@@ -8,9 +8,6 @@ sub SetLocals()
     m.fonts = m.global.fonts
     m.theme = m.global.appTheme
     m.appConfig = m.global.appConfig
-    if m.global.appResponse <> invalid
-        m.appResponse = m.global.appResponse
-    end if
     m.scalePerc = 0.224
 end sub
 
@@ -52,22 +49,17 @@ sub ItemContent_Changed()
         else
             m.lRowName.color = m.theme.White
         end if
-            m.lRowName.font = m.fonts.openSansBold40
-            m.gSubRowName.visible = true
+        m.lRowName.font = m.fonts.openSansBold40
+        m.gSubRowName.visible = true
     end if
-
 
     if itemcontent.content.duration <> invalid and itemcontent.content.duration > 0
         m.lDuration.text = FormatTimeStringInHHMMSS(itemcontent.content.duration)
         m.lDuration.font = m.fonts.openSansBold25
-        if (m.theme.focused_button_text_color <> invalid and m.theme.focused_button_text_color <> "") and (m.theme.focused_button_background_color <> invalid and m.theme.focused_button_background_color <> "")
-            m.lDuration.color = m.theme.focused_button_text_color
-            m.pDuration.blendColor = m.theme.focused_button_background_color
-        else
-            m.lDuration.color = m.theme.Black
-            m.pDuration.blendColor = m.theme.White
-        end if
+        m.lDuration.color = m.theme.UnfocusColor
+        m.pDuration.blendColor = m.theme.boxGrayLight
         m.pDuration.visible = true
+        m.lDuration.visible = true
     end if 
 
     if itemcontent.typename <> "HomeRowList"

@@ -8,6 +8,7 @@
   <script type="text/brightscript" uri="pkg:/source/managers/ViewStackManager.brs"/>
   <interface>
     <field id="outRequest" type="AssocArray"/>
+    <field id="detailTranslation" type="integer" alwaysNotify = "true"/>
     <field id="videoData" type="roArray"/>
     <field id="allVideos" type="roArray" alwaysNotify = "true"/>
     <field id="categoriesData" type="roArray"/>
@@ -44,10 +45,10 @@
       <BusySpinner id="bsPreloader" translation="[860,420]" control="start" clockwise="true" spinInterval="0.8"/>
       <Label id="lPreloader" translation="[0,600]" horizAlign="center" width="1920"/>
     </Group>
-    <Poster id= "Logo" width="326" height="56" loadwidth="326" loadheight="56" translation="[65,65]" visible="true"/>
+    <Poster id= "Logo" translation="[65,40]" height="102" visible="true"/>
     <Group id="ToastMsgBox" visible="false">
 			<Rectangle id="RectToastMsgBox" width="1920" height="1080" opacity="0.7"/>
-			<Poster id="pLogo" uri="pkg:/images/brand/logo.png" opacity="1" width="150" height="50" loadwidth="150" loadDisplayMode = "scaleToZoom" loadheight="50" translation="[745,250]"/>
+			<Poster id="pTostMsgLogo" opacity="1" width="150" height="50" loadwidth="150" loadDisplayMode = "scaleToZoom" loadheight="50" translation="[745,250]"/>
 			<Label id="ToastMsgText" width="1720" translation="[100, 370]" wrap="true" maxLines="2" horizAlign="center"/>
 		</Group>
   </children>

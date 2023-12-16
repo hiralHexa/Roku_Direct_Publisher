@@ -10,9 +10,6 @@ sub SetLocals()
     m.theme = m.global.appTheme
     m.fonts = m.global.fonts
     m.videoURL = ""
-    if m.global.appResponse <> invalid
-        m.appResponse = m.global.appResponse
-    end if
 end sub
 
 sub SetControls()
@@ -58,6 +55,11 @@ function PlayVideo(videoData as dynamic)
     videoContent.streamformat = "auto"
     videocontent.live = false
     m.videoPlayer.seekMode = "accurate"
+    if m.theme.progressbar_color <> invalid and m.theme.progressbar_color <> ""
+        m.videoPlayer.trickPlayBar.filledBarBlendColor = m.theme.progressbar_color
+    else
+        m.videoPlayer.trickPlayBar.filledBarBlendColor = m.theme.themeColor
+    END IF 
     m.videoPlayer.content = videoContent
 
     if videoData.vastURL <> invalid and videoData.vastURL <> ""

@@ -26,10 +26,12 @@
   "focusIndicator" : "#FADDAE",
   "RowListBorder" : "#FADDAE",
   "ParrotGreen" : "#00FF00",
-  "UnfocusColor" : "#FFFFFF80",
+  "UnfocusColor" : "#FFFFFF90",
   "MainCategoriesCardColor" : "#ade5ff",
   "DarkGray" :"#2e3b4f",
   "LinkColor" : "#e8e8e8",
   "Purple" : "#4B006E",
-  "ThemeColor" : "#024FA0"
+  "ThemeColor" : "#024FA0",
+  "boxGrayLight" : "#292C31",
+  "boxGrayDark" : "#1E2024"
 }

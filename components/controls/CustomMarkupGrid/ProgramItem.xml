@@ -17,9 +17,8 @@
             <MaskGroup id="borderMask" maskUri = "pkg:/images/focus/horiz-mask.png" translation="[0,0]" >
                 <Poster id="pVideoImage" translation="[0,0]" Width="500" Height="281" LoadWidth="500" LoadHeight="281" loadDisplayMode="scaleToFit" uri="pkg:/images/others/default_horizontal_poster.png"
                             loadingBitmapUri="pkg:/images/others/default_horizontal_poster.png" failedBitmapUri="pkg:/images/others/default_horizontal_poster.png">
-                    <Poster id="pDuration" width="100" height="40" uri="pkg:/images/focus/filled_r6.9.png" translation="[390,10]" visible="false">
-                        <Label id="lDuration" vertAlign = "center" horizAlign="center"/>
-                    </Poster>
+                    <Poster id="pDuration" width="100" height="40" uri="pkg:/images/focus/filled_r6.9.png" translation="[390,10]" visible="false" opacity="0.9"/>
+                    <Label id="lDuration" vertAlign = "center" horizAlign="center" translation="[390,10]" visible="false"/>
                 </Poster>
             </MaskGroup>
             <Label id="lTitle" width="480" maxLines = "2" wrap="true" lineSpacing="3.0" horizAlign = "center" translation="[10,290]" visible="false"/>

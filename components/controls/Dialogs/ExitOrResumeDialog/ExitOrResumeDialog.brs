@@ -59,13 +59,20 @@ sub UpdateText()
         m.noBtn.translation = [975,700]
     end if
     if m.top.isExitBox
-        m.pShowPoster.uri = "pkg:/images/asset/icon_focus_fhd.png"
-        m.pShowPoster.width = 540
-        m.pShowPoster.height = 405
-        m.pShowPoster.translation = [690, 295]
-        m.msg_title.translation = [0,705]
-        m.exitResume_message.translation = [0,760]
-        m.exitCalled = true
+        if m.appResponse <> invalid and m.appResponse.app_logo <> invalid and m.appResponse.app_logo <> ""
+            m.pShowPoster.uri = m.appResponse.app_logo
+            brLogo = m.pShowPoster.boundingRect()
+            m.pShowPoster.loadwidth = brLogo.width
+            m.pShowPoster.loadheight = brLogo.height
+            m.pShowPoster.width = brLogo.width
+            m.pShowPoster.height = brLogo.height
+            m.pShowPoster.translation = [(1920-brLogo.width)/2, (1080-brLogo.height)/2]
+            m.msg_title.translation = [0,((m.pShowPoster.translation[1] + m.pShowPoster.height)+ 10)]
+            m.exitResume_message.translation = [0,(m.msg_title.translation[1] + m.msg_title.height) + 60]
+            m.pYesBtnBorder.translation = [525, ((m.exitResume_message.translation[1] + m.exitResume_message.height) + m.pYesBtnBorder.height) + 10]
+            m.pNoBtnBorder.translation = [m.pYesBtnBorder.translation[0] + 450, m.pYesBtnBorder.translation[1]]
+            m.exitCalled = true
+        end if
     end if
     if dialogData.restartFlag
         m.yesBtn.text = dialogData.positiveBtnText
