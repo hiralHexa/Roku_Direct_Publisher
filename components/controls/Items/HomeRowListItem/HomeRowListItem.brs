@@ -45,18 +45,22 @@ sub ItemContent_Changed()
         m.pVideoImage.uri = "pkg:/images/focus/horiz-mask.png"
         m.pVideoImage.blendColor = m.theme.DarkGray
         m.lRowName.text = itemcontent.title
-        m.lRowName.color = m.appResponse.secondary_text_color
-        m.lRowName.font = m.fonts.openSansBold40
-        m.gSubRowName.visible = true
+        if (m.appResponse.secondary_text_color <> invalid and m.appResponse.secondary_text_color <> "")
+            m.lRowName.color = m.appResponse.secondary_text_color
+            m.lRowName.font = m.fonts.openSansBold40
+            m.gSubRowName.visible = true
+        end if 
     end if
 
 
     if itemcontent.content.duration
         m.lDuration.text = FormatTimeStringInHHMMSS(itemcontent.content.duration)
         m.lDuration.font = m.fonts.openSansBold25
-        m.lDuration.color = m.appResponse.focused_button_text_color
-        m.pDuration.blendColor = m.appResponse.focused_button_background_color
-        m.pDuration.visible = true
+        if (m.appResponse.focused_button_text_color <> invalid and m.appResponse.focused_button_text_color <> "") and (m.appResponse.focused_button_background_color <> invalid and m.appResponse.focused_button_background_color <> "")
+            m.lDuration.color = m.appResponse.focused_button_text_color
+            m.pDuration.blendColor = m.appResponse.focused_button_background_color
+            m.pDuration.visible = true
+        end if 
     end if 
 
     if itemcontent.typename <> "HomeRowList"

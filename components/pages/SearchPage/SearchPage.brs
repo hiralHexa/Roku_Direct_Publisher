@@ -119,12 +119,9 @@ sub onCustomMarkupGridItemFocused(data as dynamic)
     print "SearchPage : onCustomMarkupGridItemFocused : itemFocused : " itemFocused
     if itemFocused <> invalid and itemFocused <> -1
         focusedContent = m.customMarkupGrid.content.getChild(itemFocused)
-        print "focusedContent >>>>>>>>>: " focusedContent
         m.bgPoster.uri = focusedContent.thumbnail
         m.lVideoTitles.text = focusedContent.title
         m.lVideoDescription.text = focusedContent.shortDescription
-        print "m.lVideoTitles >>>>>>>>>>>>>: " m.lVideoTitles
-        print "m.lVideoTitles >>>>>>>>>>>>>: " m.lVideoTitles.translation
         m.lVideoTitles.visible = true
         m.lVideoDescription.visible = true
     end if
@@ -158,13 +155,18 @@ sub OnKeyboard_TextChange()
 end sub
 
 sub DoSearch(searchTerm as string)
+    VideoData = m.scene.allVideos
     ' print " DoSearch"
     ShowHideLoader(true, "Please wait...", false)
     m.VideoItemDetails = []
-    if m.scene.allVideos <> invalid
-        for each item in m.scene.allVideos
-            if lcase(item.title).Instr(searchTerm) >= 0
-                m.VideoItemDetails.Push(item)
+    if VideoData <> invalid
+        for each VideoDataItem in VideoData
+            if VideoDataItem.programs <> invalid and  VideoDataItem.programs.count() > 0
+                for each item in VideoDataItem.programs
+                    if lcase(item.title).Instr(searchTerm) >= 0
+                        m.VideoItemDetails.Push(item)
+                    end if
+                end for
             end if
         end for
     end if

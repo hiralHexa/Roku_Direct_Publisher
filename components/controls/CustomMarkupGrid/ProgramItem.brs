@@ -9,6 +9,7 @@ end sub
 sub SetLocals()
     m.fonts = m.global.fonts
     m.theme = m.global.appTheme
+    m.appResponse = m.global.appResponse
 end sub
 
 sub SetControls()
@@ -16,6 +17,8 @@ sub SetControls()
     m.borderMask = m.top.findNode("borderMask")
     m.pVideoImage = m.top.findNode("pVideoImage")
     m.lTitle = m.top.findNode("lTitle")
+    m.pDuration = m.top.findNode("pDuration")
+    m.lDuration = m.top.findNode("lDuration")
 end sub
 
 sub SetupFonts()
@@ -44,6 +47,17 @@ sub ItemContent_Changed()
         m.pVideoImage.uri = "pkg:/images/focus/horiz-mask.png"
         m.pVideoImage.blendColor = m.theme.DarkGray
     end if
+
+    if itemcontent.content.duration
+        m.lDuration.text = FormatTimeStringInHHMMSS(itemcontent.content.duration)
+        m.lDuration.font = m.fonts.openSansBold25
+        if (m.appResponse.focused_button_text_color <> invalid and m.appResponse.focused_button_text_color <> "") and (m.appResponse.focused_button_background_color <> invalid and m.appResponse.focused_button_background_color <> "")
+            m.lDuration.color = m.appResponse.focused_button_text_color
+            m.pDuration.blendColor = m.appResponse.focused_button_background_color
+            m.pDuration.visible = true
+        end if 
+    end if
+
 end sub
 
 sub setSize(percent as float)

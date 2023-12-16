@@ -39,7 +39,9 @@ sub SetControls()
 end sub
 
 sub SetupColorAndFont()
-    m.background.color = m.appResponse.background_color
+    if (m.appResponse.background_color <> invalid and m.appResponse.background_color <> "")
+        m.background.color = m.appResponse.background_color
+    end if 
     m.searchIcon.blendColor = m.theme.UnfocusColor
     m.rectOverlay.color = m.theme.Black
     m.menuTitleLabel.color = m.theme.White
@@ -124,6 +126,7 @@ sub OnCategoriesDataResponse(event as dynamic)
         if m.HomeRowListControl.visible = false
             m.HomeRowListControl.visible = true
         end if
+        m.scene.allVideos = m.CategoriesProgramToAdd
     else if (tabData.ok AND tabData.data <> Invalid AND tabData.data.count() > 0)
         objResponse = tabData.data
         for each dataItem in objResponse.items()
@@ -141,7 +144,7 @@ sub OnCategoriesDataResponse(event as dynamic)
         if m.HomeRowListControl.visible = false
             m.HomeRowListControl.visible = true
         end if
-
+        m.scene.allVideos = m.CategoriesProgramToAdd
         if (not IsNullOrEmpty(m.scene.deepLinkingMediaType)) and (not IsNullOrEmpty(m.scene.deepLinkingContentId))
             FetchDeepLinkingData(m.scene.deepLinkingContentId)
         else
