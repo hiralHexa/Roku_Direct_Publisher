@@ -2,6 +2,9 @@ sub init()
     m.theme = m.global.appTheme
     m.appConfig = m.global.appConfig
     m.fonts = m.global.Fonts
+    if m.global.appResponse <> invalid
+        m.appResponse = m.global.appResponse
+    end if
     m.showAnimation = m.top.findNode("showAnimation")
     m.showAnimation.control = "start"
     m.exitResume_message = m.top.findNode("exitResume_message")
@@ -14,10 +17,23 @@ sub init()
     m.pShowPoster = m.top.findNode("pShowPoster")
     m.exitCalled = false
     m.focusKey = 1
-    m.pYesBtnBorder.blendcolor = m.theme.Gray
-    m.pNoBtnBorder.blendcolor = m.theme.ThemeColor
-    m.yesBtn.color = m.theme.White
-    m.noBtn.color = m.theme.Black
+    if (m.appResponse <> invalid and m.theme.focused_button_background_color <> invalid and m.theme.focused_button_background_color <> "") and (m.theme.unfocused_button_background_color <> invalid and m.theme.unfocused_button_background_color <> "") and (m.theme.focused_button_text_color <> invalid and m.theme.focused_button_text_color <> "") and (m.theme.unfocused_button_text_color <> invalid and m.theme.unfocused_button_text_color <> "")
+        m.focused_button_background_color = m.theme.focused_button_background_color
+        m.unfocused_button_background_color = m.theme.unfocused_button_background_color
+        m.focused_button_text_color = m.theme.focused_button_text_color
+        m.unfocused_button_text_color = m.theme.unfocused_button_text_color
+    else
+        m.focused_button_background_color = m.theme.ThemeColor
+        m.unfocused_button_background_color = m.theme.Gray
+        m.focused_button_text_color = m.theme.Black
+        m.unfocused_button_text_color = m.theme.White
+    end if 
+
+    m.pYesBtnBorder.blendcolor = m.unfocused_button_background_color
+    m.pNoBtnBorder.blendcolor = m.focused_button_background_color
+    m.yesBtn.color = m.unfocused_button_text_color
+    m.noBtn.color = m.focused_button_text_color
+
     SetupFonts()
     SetupColor()
 end sub
@@ -62,11 +78,11 @@ sub UpdateText()
         m.yesBtn.text = dialogData.positiveBtnText
         m.noBtn.text = dialogData.negativeBtnText
         m.focusKey = 1
-        m.pNoBtnBorder.blendcolor = m.theme.ThemeColor
-        m.pYesBtnBorder.blendcolor = m.theme.Gray
+        m.pNoBtnBorder.blendcolor = m.focused_button_background_color
+        m.pYesBtnBorder.blendcolor = m.unfocused_button_background_color
 
-        m.yesBtn.color = m.theme.White
-        m.noBtn.color = m.theme.Black
+        m.yesBtn.color = m.unfocused_button_text_color
+        m.noBtn.color = m.focused_button_text_color
     end if
 end sub
 
@@ -85,12 +101,12 @@ sub SetupFonts()
 end sub
 
 sub SetupColor()
-    m.yesBtn.color = m.theme.Black
-    m.pYesBtnBorder.blendcolor = m.theme.ThemeColor
-    m.pNoBtnBorder.blendcolor = m.theme.Gray
-    m.rectBackground.color = m.theme.Black
-    m.noBtn.color = m.theme.White
-    m.exitResume_message.color = m.theme.White
+    m.yesBtn.color = m.focused_button_text_color
+    m.pYesBtnBorder.blendcolor = m.focused_button_background_color
+    m.pNoBtnBorder.blendcolor = m.unfocused_button_background_color
+    m.rectBackground.color = m.focused_button_text_color
+    m.noBtn.color = m.unfocused_button_text_color
+    m.exitResume_message.color = m.unfocused_button_text_color
 end sub
 
 sub On_bExitResumeYes_button_pressed()
@@ -111,18 +127,18 @@ function onKeyEvent(key as string, press as boolean) as boolean
         else if key = "right"
             if m.focusKey = 0 and m.pNoBtnBorder.visible and m.noBtn.visible
                 m.focusKey = 1
-                m.pNoBtnBorder.blendcolor = m.theme.ThemeColor
-                m.pYesBtnBorder.blendcolor = m.theme.Gray
-                m.yesBtn.color = m.theme.White
-                m.noBtn.color = m.theme.Black
+                m.pNoBtnBorder.blendcolor = m.focused_button_background_color
+                m.pYesBtnBorder.blendcolor = m.unfocused_button_background_color
+                m.yesBtn.color = m.unfocused_button_text_color
+                m.noBtn.color = m.focused_button_text_color
             end if
         else if key = "left" and m.pYesBtnBorder.visible and m.yesBtn.visible
             if m.focusKey = 1
                 m.focusKey = 0
-                m.pYesBtnBorder.blendcolor = m.theme.ThemeColor
-                m.pNoBtnBorder.blendcolor = m.theme.Gray
-                m.yesBtn.color = m.theme.Black
-                m.noBtn.color = m.theme.White
+                m.pYesBtnBorder.blendcolor = m.focused_button_background_color
+                m.pNoBtnBorder.blendcolor = m.unfocused_button_background_color
+                m.yesBtn.color = m.focused_button_text_color
+                m.noBtn.color = m.unfocused_button_text_color
             end if
         else if key = "OK"
             if m.focusKey = 0

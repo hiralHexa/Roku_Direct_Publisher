@@ -111,16 +111,22 @@ sub OnGetSettingsDataResponse(event as dynamic)
             ShowHideLoader(false)
         end if
     else
+        ' showHomePage(true)
         showErrorPage(true)
         ShowHideLoader(false)
     end if 
+    if (m.theme.background_color <> invalid and m.theme.background_color <> "") and (m.theme.background_image <> invalid and m.theme.background_image <> "")
+        m.rBackground.color = appResponse.background_color
+        m.pBackgound.uri = appResponse.background_image
+    else
+        m.rBackground.color = m.theme.ThemeColor
+    end if
 end sub
 
 sub SetUpAppConfigs(appResponse as dynamic)
-    m.rBackground.color = appResponse.background_color
-    m.pBackgound.uri = appResponse.background_image
-
-    m.theme.ThemeColor = appResponse.background_color
+    m.logo.uri = appResponse.app_logo
+    m.theme.background_image = appResponse.background_image
+    m.theme.background_color = appResponse.background_color
     m.theme.focused_button_background_color = appResponse.focused_button_background_color
     m.theme.unfocused_button_background_color = appResponse.unfocused_button_background_color
     m.theme.focused_button_text_color = appResponse.focused_button_text_color

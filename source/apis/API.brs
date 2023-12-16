@@ -28,8 +28,10 @@ function SampleTV_API_GetSettingsData()
     return response
 end function
 
-function SampleTV_API_GetCategories()
-    path = GlobalGet("apiEndPoints").JSONBaseURL
+function SampleTV_API_GetCategories(feedUrl as string)
+    path = feedUrl
+    print "path >>>>>>>>>>>>>> " path
+    ' path = GlobalGet("apiEndPoints").JSONBaseURL
     headers = {}
     data = {}
     response = getRequest(path, data, headers)
@@ -39,6 +41,8 @@ function SampleTV_API_GetCategories()
         return error(getErrorReason(response))
     end if
     ' response = ReadAsciiFile(GlobalGet("apiEndPoints").JSONBaseURL)
-    ' return ok(ParseJson(response))
+    ' response = ReadAsciiFile(feedUrl)
+    print "response >>>>>>>>>>>>>> " response
+    return ok(ParseJson(response))
     return response
 end function

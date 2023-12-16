@@ -7,6 +7,6 @@ function GetSettingsData() as void
 end function
 
 function GetCategories() as void
-    response = SampleTV_API().GetCategories()
+    response = SampleTV_API().GetCategories(m.top.feedUrl)
     m.top.result = response
 end function

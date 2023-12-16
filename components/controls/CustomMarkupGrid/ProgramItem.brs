@@ -48,7 +48,7 @@ sub ItemContent_Changed()
         m.pVideoImage.blendColor = m.theme.DarkGray
     end if
 
-    if itemcontent.content.duration
+    if itemcontent.content.duration <> invalid and itemcontent.content.duration > 0
         m.lDuration.text = FormatTimeStringInHHMMSS(itemcontent.content.duration)
         m.lDuration.font = m.fonts.openSansBold25
         if (m.appResponse.focused_button_text_color <> invalid and m.appResponse.focused_button_text_color <> "") and (m.appResponse.focused_button_background_color <> invalid and m.appResponse.focused_button_background_color <> "")

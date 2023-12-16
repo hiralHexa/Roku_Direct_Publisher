@@ -8,7 +8,9 @@ sub SetLocals()
     m.fonts = m.global.fonts
     m.theme = m.global.appTheme
     m.appConfig = m.global.appConfig
-    m.appResponse = m.global.appResponse
+    if m.global.appResponse <> invalid
+        m.appResponse = m.global.appResponse
+    end if
     m.scalePerc = 0.224
 end sub
 
@@ -45,22 +47,27 @@ sub ItemContent_Changed()
         m.pVideoImage.uri = "pkg:/images/focus/horiz-mask.png"
         m.pVideoImage.blendColor = m.theme.DarkGray
         m.lRowName.text = itemcontent.title
-        if (m.appResponse.secondary_text_color <> invalid and m.appResponse.secondary_text_color <> "")
-            m.lRowName.color = m.appResponse.secondary_text_color
+        if (m.theme.secondary_text_color <> invalid and m.theme.secondary_text_color <> "")
+            m.lRowName.color = m.theme.secondary_text_color
+        else
+            m.lRowName.color = m.theme.White
+        end if
             m.lRowName.font = m.fonts.openSansBold40
             m.gSubRowName.visible = true
-        end if 
     end if
 
 
-    if itemcontent.content.duration
+    if itemcontent.content.duration <> invalid and itemcontent.content.duration > 0
         m.lDuration.text = FormatTimeStringInHHMMSS(itemcontent.content.duration)
         m.lDuration.font = m.fonts.openSansBold25
-        if (m.appResponse.focused_button_text_color <> invalid and m.appResponse.focused_button_text_color <> "") and (m.appResponse.focused_button_background_color <> invalid and m.appResponse.focused_button_background_color <> "")
-            m.lDuration.color = m.appResponse.focused_button_text_color
-            m.pDuration.blendColor = m.appResponse.focused_button_background_color
-            m.pDuration.visible = true
-        end if 
+        if (m.theme.focused_button_text_color <> invalid and m.theme.focused_button_text_color <> "") and (m.theme.focused_button_background_color <> invalid and m.theme.focused_button_background_color <> "")
+            m.lDuration.color = m.theme.focused_button_text_color
+            m.pDuration.blendColor = m.theme.focused_button_background_color
+        else
+            m.lDuration.color = m.theme.Black
+            m.pDuration.blendColor = m.theme.White
+        end if
+        m.pDuration.visible = true
     end if 
 
     if itemcontent.typename <> "HomeRowList"

@@ -11,7 +11,9 @@ sub SetLocals()
     m.scene = m.top.GetScene()
     m.fonts = m.global.fonts
     m.theme = m.global.appTheme
-    m.appResponse = m.global.appResponse
+    if m.global.appResponse <> invalid
+        m.appResponse = m.global.appResponse
+    end if
     m.isFirstTime = true
     m.categoriesCount = 0
     m.lastFocusIndex = 0
@@ -39,9 +41,14 @@ sub SetControls()
 end sub
 
 sub SetupColorAndFont()
-    if (m.appResponse.background_color <> invalid and m.appResponse.background_color <> "")
-        m.background.color = m.appResponse.background_color
+    if (m.theme.background_color <> invalid and m.theme.background_color <> "")
+        m.background.color = m.theme.background_color
+        m.SearchBackground.blendColor = m.theme.background_color
+    else
+        m.background.color = m.theme.ThemeColor
+        m.SearchBackground.blendColor = m.theme.ThemeColor
     end if 
+    m.SearchBackground.blendColor = m.theme.Gray
     m.searchIcon.blendColor = m.theme.UnfocusColor
     m.rectOverlay.color = m.theme.Black
     m.menuTitleLabel.color = m.theme.White
@@ -63,12 +70,18 @@ sub Initialize()
 end sub
 
 sub LoadData()
-    GetCategories()
+    if m.appResponse.feedUrl <> invalid and m.appResponse.feedUrl <> ""
+        GetCategories(m.appResponse.feedUrl)
+    else
+        m.scene.callFunc("showErrorPage",true)
+    end if
+    
 end sub
 
-sub GetCategories()
+sub GetCategories(feedUrl as string)
     m.CategoriesProgramToAdd = CreateObject("roArray",0,true)
     m.CategoriessDataTask = CreateObject("roSGNode", "APIAction")
+    m.CategoriessDataTask.feedUrl = feedUrl
     m.CategoriessDataTask.functionName = "GetCategories"
     m.CategoriessDataTask.ObserveField("result", "OnCategoriesDataResponse")
     m.CategoriessDataTask.control = "RUN"
@@ -80,8 +93,11 @@ sub OnCategoriesDataResponse(event as dynamic)
     isRowFill = false
     withObjCategory = true
     m.scene.callFunc("ShowHideLoader",false)
+    print "tabData >>>>>>>>>>>>>>>. " tabData
     if (tabData.ok AND tabData.data <> Invalid AND tabData.data.categories <> invalid AND tabData.data.categories.count() > 0)
         objResponse = tabData.data
+        print "objResponse >>>>>>>>>>>>>>> " objResponse
+        print "objResponse.categories >>>>>>>>>>>>>>> " objResponse.categories
         for each dataItem in objResponse.categories
             for each data in dataItem.items()
                 if isRowFill = false
@@ -230,7 +246,6 @@ end sub
 
 sub SearchIconFocus()
     if m.searchIcon <> invalid
-        m.SearchBackground.blendColor = m.theme.ThemeColor
         m.SearchBackground.visible = true
         searchBoundingRect = m.menuTitleLabel.boundingRect()
         m.menuTitleLabel.text = "Search"

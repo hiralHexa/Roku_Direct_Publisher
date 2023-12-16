@@ -12,6 +12,7 @@ sub SetLocals()
     m.scene = m.top.GetScene()
     m.theme = m.global.appTheme
     m.fonts = m.global.fonts
+    m.appResponse = m.global.appResponse
 end sub
 
 sub SetControls()
@@ -28,11 +29,21 @@ sub SetupFonts()
 end sub
 
 sub SetupColor()
-    m.lTitleName.color = m.theme.baseColorDarkGray
-    m.lNoItemsAvailable.color = m.theme.baseColorGray
-    m.lCurrentIndexIndicator.color = m.theme.baseColorGray
-    m.markupGrid.focusFootprintBlendColor = m.theme.baseColor
-    m.markupGrid.focusBitmapBlendColor = m.theme.baseColor
+    if (m.appResponse <> invalid and m.theme.primary_text_color <> invalid and m.theme.primary_text_color <> "") and (m.appResponse.secondary_text_color <> invalid and m.appResponse.secondary_text_color <> "") and (m.appResponse.focus_indicator_color <> invalid and m.appResponse.focus_indicator_color <> "")
+        m.primary_text_color = m.theme.primary_text_color
+        m.secondary_text_color = m.theme.secondary_text_color
+        m.focus_indicator_color = m.theme.focus_indicator_color
+    else
+        m.primary_text_color = m.theme.baseColorDarkGray
+        m.secondary_text_color = m.theme.baseColorDarkGray
+        m.focus_indicator_color = m.theme.baseColor
+    end if
+
+    m.lTitleName.color = m.secondary_text_color
+    m.lNoItemsAvailable.color = m.secondary_text_color
+    m.lCurrentIndexIndicator.color = m.primary_text_color
+    m.markupGrid.focusFootprintBlendColor = m.focus_indicator_color
+    m.markupGrid.focusBitmapBlendColor = m.focus_indicator_color
 end sub
 
 sub SetObservers()

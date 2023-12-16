@@ -13,6 +13,7 @@ sub SetLocals()
     m.scene = m.top.GetScene()
     m.theme = m.global.appTheme
     m.fonts = m.global.fonts
+    m.appResponse = m.global.appResponse
     m.lastSearchTerm = ""
 end sub
 
@@ -45,15 +46,26 @@ sub SetupFonts()
 end sub
 
 sub setupColors()
-    m.rBackground.color = m.theme.ThemeColor
+    m.rBackground.color = m.theme.background_color
     ' m.miniKeyboard.textEditBox.textColor = m.theme.baseColorDarkGray
     ' m.miniKeyboard.focusedKeyColor = m.theme.baseColor
     ' m.miniKeyboard.KeyColor = m.theme.baseColorDarkGray
-    m.lKeyBoardTitle.color = m.theme.white
-    m.lVideoTitles.color = m.theme.white
-    m.lVideoDescription.color = m.theme.white
-    m.lSearchHint.color = m.theme.white
-    m.lNoItems.color = m.theme.white
+
+    if (m.appResponse <> invalid and m.theme.primary_text_color <> invalid and m.theme.primary_text_color <> "") and (m.theme.secondary_text_color <> invalid and m.appResponse.secondary_text_color <> "") and (m.appResponse.focus_indicator_color <> invalid and m.appResponse.focus_indicator_color <> "")
+        m.primary_text_color = m.theme.primary_text_color
+        m.secondary_text_color = m.theme.secondary_text_color
+        m.focus_indicator_color = m.theme.focus_indicator_color
+    else
+        m.primary_text_color = m.theme.white
+        m.secondary_text_color = m.theme.white
+        m.focus_indicator_color = m.theme.black
+    end if
+
+    m.lKeyBoardTitle.color = m.primary_text_color
+    m.lVideoTitles.color = m.secondary_text_color
+    m.lVideoDescription.color = m.secondary_text_color
+    m.lSearchHint.color = m.secondary_text_color
+    m.lNoItems.color = m.secondary_text_color
 end sub
 
 sub SetObservers()

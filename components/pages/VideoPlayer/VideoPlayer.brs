@@ -10,6 +10,9 @@ sub SetLocals()
     m.theme = m.global.appTheme
     m.fonts = m.global.fonts
     m.videoURL = ""
+    if m.global.appResponse <> invalid
+        m.appResponse = m.global.appResponse
+    end if
 end sub
 
 sub SetControls()
@@ -49,7 +52,6 @@ sub OnGetVideoData()
 end sub
 
 function PlayVideo(videoData as dynamic)
-    print "videoData >>>>>>>>>>>: " videoData
     videoContent = createObject("RoSGNode", "ContentNode")
     videoContent.url = m.videoURL
     videoContent.title = videoData.title

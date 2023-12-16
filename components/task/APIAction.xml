@@ -20,6 +20,7 @@
         <field id="playVideo" type="boolean"/>
         <field id="CategoryId" type="string"/>
         <field id="Email" type="string"/>
+        <field id="feedUrl" type="string"/>
 
         <field id="result" type="assocarray"/>
         <field id="resultData" type="array"/>

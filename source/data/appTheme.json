@@ -30,5 +30,6 @@
   "MainCategoriesCardColor" : "#ade5ff",
   "DarkGray" :"#2e3b4f",
   "LinkColor" : "#e8e8e8",
-  "Purple" : "#4B006E"
+  "Purple" : "#4B006E",
+  "ThemeColor" : "#024FA0"
 }

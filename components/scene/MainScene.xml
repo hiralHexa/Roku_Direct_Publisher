@@ -24,6 +24,8 @@
     <function name="HandleInputEvent"/>
     <function name="ShowErrorDialog"/>
     <function name="showHomePage"/>
+    <function name="showErrorPage"/>
+    
     <function name="StartVideo"/>
     <function name= "ShowHideLoader"/>
     <function name = "ShowSearchPage" />
@@ -42,7 +44,7 @@
       <BusySpinner id="bsPreloader" translation="[860,420]" control="start" clockwise="true" spinInterval="0.8"/>
       <Label id="lPreloader" translation="[0,600]" horizAlign="center" width="1920"/>
     </Group>
-    <Poster id= "Logo" uri="pkg:/images/brand/logo.png" width="326" height="56" loadwidth="326" loadheight="56" translation="[65,65]" visible="false"/>
+    <Poster id= "Logo" width="326" height="56" loadwidth="326" loadheight="56" translation="[65,65]" visible="true"/>
     <Group id="ToastMsgBox" visible="false">
 			<Rectangle id="RectToastMsgBox" width="1920" height="1080" opacity="0.7"/>
 			<Poster id="pLogo" uri="pkg:/images/brand/logo.png" opacity="1" width="150" height="50" loadwidth="150" loadDisplayMode = "scaleToZoom" loadheight="50" translation="[745,250]"/>

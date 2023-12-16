@@ -10,13 +10,15 @@ sub SetLocals()
     m.theme = m.global.appTheme
     m.fonts = m.global.Fonts
     m.appConfig = m.global.appConfig
-    m.appResponse = m.global.appResponse
+    if m.global.appResponse <> invalid
+        m.appResponse = m.global.appResponse
+    end if
     m.scene = m.top.getScene()
     m.Overlay = false
     m.alignment= "left"
     m.titleWidth = 880
     m.descriptionWidth = 880
-    m.descriptionmaxLines = 8
+    m.descriptionmaxLines = 4
 end sub
 
 sub SetNodes()
@@ -31,8 +33,11 @@ sub SetNodes()
 end sub
 
 sub SetupColor()
-    if (m.appResponse.background_color <> invalid and m.appResponse.background_color <> "")
-        m.pVideoBackGround.color = m.appResponse.background_color
+    print 
+    if (m.theme.background_color <> invalid and m.theme.background_color <> "")
+        m.pVideoBackGround.color = m.theme.background_color
+    else
+        m.pVideoBackGround.color = m.theme.ThemeColor
     end if 
     m.PosterOverlay.blendColor = m.theme.ThemeColor
 end sub
@@ -67,12 +72,14 @@ sub ItemContent_Changed()
             m.lTitle.id = "lTitle"
             m.lTitle.width = m.titleWidth
             m.lTitle.wrap = true
-            m.lTitle.maxLines = 1
+            m.lTitle.maxLines = 2
             m.lTitle.lineSpacing = 0
             m.lTitle.horizAlign = m.alignment
             m.lTitle.font = m.fonts.openSansbold72
-            if (m.appResponse.primary_text_color <> invalid and m.appResponse.primary_text_color <> "")
-                m.lTitle.color = m.appResponse.primary_text_color
+            if (m.theme.primary_text_color <> invalid and m.theme.primary_text_color <> "")
+                m.lTitle.color = m.theme.primary_text_color
+            else
+                m.lTitle.color = m.theme.White
             end if 
             m.lTitle.text = itemcontent.title
             m.lgTitleDescription.appendChild(m.lTitle)
@@ -87,8 +94,10 @@ sub ItemContent_Changed()
             m.lDescription.horizAlign = m.alignment
             m.lDescription.lineSpacing = -2
             m.lDescription.font = m.fonts.openSansReg35
-            if (m.appResponse.secondary_text_color <> invalid and m.appResponse.secondary_text_color <> "")
-                m.lDescription.color = m.appResponse.secondary_text_color
+            if (m.theme.secondary_text_color <> invalid and m.theme.secondary_text_color <> "")
+                m.lDescription.color = m.theme.secondary_text_color
+            else
+                m.lDescription.color = m.theme.White
             end if
             m.lDescription.text = itemcontent.shortDescription
             m.lgTitleDescription.appendChild(m.lDescription)
@@ -103,8 +112,10 @@ sub ItemContent_Changed()
             m.lGenres.lineSpacing = 0
             m.lGenres.horizAlign = m.alignment
             m.lGenres.font = m.fonts.openSansReg35
-            if (m.appResponse.secondary_text_color <> invalid and m.appResponse.secondary_text_color <> "")
-                m.lGenres.color = m.appResponse.secondary_text_color
+            if (m.theme.secondary_text_color <> invalid and m.theme.secondary_text_color <> "")
+                m.lGenres.color = m.theme.secondary_text_color
+            else
+                m.lGenres.color = m.theme.White
             end if 
             m.lGenres.text = itemcontent.genres
             m.lgTitleDescription.appendChild(m.lGenres)
@@ -120,8 +131,10 @@ sub ItemContent_Changed()
                 m.lRating.lineSpacing = 0
                 m.lRating.horizAlign = m.alignment
                 m.lRating.font = m.fonts.openSansReg35
-                if (m.appResponse.secondary_text_color <> invalid and m.appResponse.secondary_text_color <> "")
-                    m.lRating.color = m.appResponse.secondary_text_color
+                if (m.theme.secondary_text_color <> invalid and m.theme.secondary_text_color <> "")
+                    m.lRating.color = m.theme.secondary_text_color
+                else
+                    m.lRating.color = m.theme.Whit
                 end if
                 m.lRating.text = ratingTitle.key + " : " + ratingTitle.value
             end for
@@ -149,10 +162,9 @@ sub ISCategory()
     m.slButtonTextHeight = 46
     m.lgTitleDescription.translation = [65, 150]
     m.lgTitleDescription.itemSpacings = [8.0]
-    if (m.appResponse.background_image <> invalid and m.appResponse.background_image <> "")
-        m.pVideo.uri =  m.appResponse.background_image
+    if (m.theme.background_image <> invalid and m.theme.background_image <> "")
+        m.pVideo.uri =  m.theme.background_image
     end if 
-    print "m.pVideo.uri >>>>>>>>>>>>>>> " m.appResponse.background_image
 end sub
 
 sub IsDetailWithGrid()
@@ -170,7 +182,7 @@ sub IsNotCategory()
         OnAnimation()
     end if
     m.lgTitleDescription.itemSpacings = [5,2.0,2.0,2.0,2.0]
-    m.descriptionmaxLines = 8
+    m.descriptionmaxLines = 4
     if (not IsNullOrEmpty(m.top.itemContent.thumbnail))
         m.pVideo.uri = m.appResponse.background_image
     end if

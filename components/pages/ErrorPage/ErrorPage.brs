@@ -11,7 +11,9 @@ sub SetLocals()
     m.scene = m.top.GetScene()
     m.fonts = m.global.fonts
     m.theme = m.global.appTheme
-    m.appResponse = m.global.appResponse
+    if m.global.appResponse <> invalid
+        m.appResponse = m.global.appResponse
+    end if
     m.appConfig = m.global.appConfig
 end sub
 

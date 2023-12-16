@@ -11,7 +11,9 @@ sub SetLocals()
     m.theme = m.global.appTheme
     m.fonts = m.global.fonts
     m.appConfig = m.global.appConfig
-    m.appResponse = m.global.appResponse
+    if m.global.appResponse <> invalid
+        m.appResponse = m.global.appResponse
+    end if
     m.scene = m.top.GetScene()
     m.lastFocusedRowIndex = -1
     m.lastFocusedColumnIndex = -1
@@ -28,8 +30,13 @@ sub SetupFonts()
 end sub
 
 sub SetupColor()
-    m.rlHomeRowList.rowLabelColor = m.theme.themeColor
-    m.rlHomeRowList.focusBitmapBlendColor = m.theme.themeColor
+    if m.theme.secondary_text_color <> invalid and m.theme.secondary_text_color <> "" and m.theme.focus_indicator_color <> invalid and m.theme.focus_indicator_color <> ""
+        m.rlHomeRowList.rowLabelColor = m.theme.secondary_text_color
+        m.rlHomeRowList.focusBitmapBlendColor = m.theme.focus_indicator_color
+    else
+        m.rlHomeRowList.rowLabelColor = m.theme.White
+        m.rlHomeRowList.focusBitmapBlendColor = m.theme.White
+    end if
 end sub
 
 sub SetObservers()
