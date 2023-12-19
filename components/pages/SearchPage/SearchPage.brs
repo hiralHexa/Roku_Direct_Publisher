@@ -46,7 +46,7 @@ sub SetupFonts()
 end sub
 
 sub setupColors()
-    m.rBackground.color = m.theme.background_color
+    m.rBackground.color = m.theme.black
     ' m.miniKeyboard.textEditBox.textColor = m.theme.baseColorDarkGray
     ' m.miniKeyboard.focusedKeyColor = m.theme.baseColor
     ' m.miniKeyboard.KeyColor = m.theme.baseColorDarkGray
@@ -60,7 +60,9 @@ sub setupColors()
         m.secondary_text_color = m.theme.white
         m.focus_indicator_color = m.theme.black
     end if
-
+    if m.appResponse.background_image <> invalid
+        m.bgPoster.uri = m.appResponse.background_image
+    end if 
     m.lKeyBoardTitle.color = m.primary_text_color
     m.lVideoTitles.color = m.secondary_text_color
     m.lVideoDescription.color = m.secondary_text_color
@@ -131,7 +133,6 @@ sub onCustomMarkupGridItemFocused(data as dynamic)
     print "SearchPage : onCustomMarkupGridItemFocused : itemFocused : " itemFocused
     if itemFocused <> invalid and itemFocused <> -1
         focusedContent = m.customMarkupGrid.content.getChild(itemFocused)
-        m.bgPoster.uri = focusedContent.thumbnail
         m.lVideoTitles.text = focusedContent.title
         m.lVideoDescription.text = focusedContent.shortDescription
         m.lVideoTitles.visible = true

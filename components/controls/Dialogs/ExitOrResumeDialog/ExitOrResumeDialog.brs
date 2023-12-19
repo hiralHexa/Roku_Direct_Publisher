@@ -5,6 +5,8 @@ sub init()
     if m.global.appResponse <> invalid
         m.appResponse = m.global.appResponse
     end if
+    m.lgExitBox = m.top.findNode("lgExitBox")
+    m.lgbtngrp = m.top.findNode("lgbtngrp")
     m.showAnimation = m.top.findNode("showAnimation")
     m.showAnimation.control = "start"
     m.exitResume_message = m.top.findNode("exitResume_message")
@@ -66,12 +68,12 @@ sub UpdateText()
             m.pShowPoster.loadheight = brLogo.height
             m.pShowPoster.width = brLogo.width
             m.pShowPoster.height = brLogo.height
-            m.pShowPoster.translation = [(1920-brLogo.width)/2, (1080-brLogo.height)/2]
-            m.msg_title.translation = [0,((m.pShowPoster.translation[1] + m.pShowPoster.height)+ 10)]
-            m.exitResume_message.translation = [0,(m.msg_title.translation[1] + m.msg_title.height) + 60]
-            m.pYesBtnBorder.translation = [525, ((m.exitResume_message.translation[1] + m.exitResume_message.height) + m.pYesBtnBorder.height) + 10]
-            m.pNoBtnBorder.translation = [m.pYesBtnBorder.translation[0] + 450, m.pYesBtnBorder.translation[1]]
             m.exitCalled = true
+            brexitDialog = m.lgExitBox.boundingRect()
+            m.lgExitBox.translation = [(1920-brexitDialog.width)/2,(1080-brexitDialog.height)/2]
+            brlgbtngrpDialog = m.lgbtngrp.boundingRect()
+            m.lgbtngrp.translation = [(1920-brlgbtngrpDialog.width)/2,m.lgExitBox.translation[1] + brexitDialog.height + 15]
+            m.pShowPoster.translation = [(1920-brLogo.width)/2,(1080-(brLogo.height + brexitDialog.height + brlgbtngrpDialog.height + 20))/2]
         end if
     end if
     if dialogData.restartFlag

@@ -14,7 +14,7 @@
 
     <children>
         <Group id="lgGridContentVertical" translation="[0,0]" visible = "false">
-            <MaskGroup id="borderMask" maskUri = "pkg:/images/focus/horiz-mask.png" translation="[0,0]" >
+            <MaskGroup id="borderMask" maskUri = "pkg:/images/masks/normal_row_card_mark1.png" translation="[0,0]" >
                 <Poster id="pVideoImage" translation="[0,0]" Width="500" Height="281" LoadWidth="500" LoadHeight="281" loadDisplayMode="scaleToFit" uri="pkg:/images/others/default_horizontal_poster.png"
                             loadingBitmapUri="pkg:/images/others/default_horizontal_poster.png" failedBitmapUri="pkg:/images/others/default_horizontal_poster.png">
                     <Poster id="pDuration" width="100" height="40" uri="pkg:/images/focus/filled_r6.9.png" translation="[390,10]" visible="false" opacity="0.9"/>

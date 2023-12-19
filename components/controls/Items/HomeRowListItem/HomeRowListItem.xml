@@ -10,7 +10,7 @@
     </interface>
     <children>
         <Group id="lgRowlistContentVertical" translation="[0,0]" visible = "false">
-            <MaskGroup id="borderMask" maskUri = "pkg:/images/focus/horiz-mask.png">
+            <MaskGroup id="borderMask" maskUri = "pkg:/images/masks/normal_row_card_mark1.png">
                 <Poster id="pVideoImage" height = "225" width = "400" loadHeight = "225" loadWidth = "400" loadDisplayMode="scaleToFit" uri="pkg:/images/others/default_horizontal_poster.png"
                             loadingBitmapUri="pkg:/images/others/default_horizontal_poster.png" failedBitmapUri="pkg:/images/others/default_horizontal_poster.png">
                     <Poster id="pDuration" width="100" height="40" uri="pkg:/images/focus/filled_r6.9.png" translation="[290,10]" visible="false" opacity="0.9"/>

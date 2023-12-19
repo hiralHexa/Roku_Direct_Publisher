@@ -37,7 +37,6 @@ sub ItemContent_Changed()
     end if
     m.borderMask.maskSize = maskSize
     m.lgRowlistContentVertical.translation = [5,5]
-
     if itemContent.thumbnail <> invalid and itemContent.thumbnail <> ""
         m.pVideoImage.uri = itemcontent.thumbnail
     else

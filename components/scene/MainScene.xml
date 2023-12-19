@@ -48,7 +48,7 @@
     <Poster id= "Logo" translation="[65,40]" height="102" visible="true"/>
     <Group id="ToastMsgBox" visible="false">
 			<Rectangle id="RectToastMsgBox" width="1920" height="1080" opacity="0.7"/>
-			<Poster id="pTostMsgLogo" opacity="1" width="150" height="50" loadwidth="150" loadDisplayMode = "scaleToZoom" loadheight="50" translation="[745,250]"/>
+			<Poster id="pTostMsgLogo" opacity="1" height="102" loadwidth="150" loadDisplayMode = "scaleToZoom" loadheight="50" translation="[745,250]"/>
 			<Label id="ToastMsgText" width="1720" translation="[100, 370]" wrap="true" maxLines="2" horizAlign="center"/>
 		</Group>
   </children>

@@ -31,7 +31,7 @@ sub ItemContent_Changed()
         maskSize = [maskSize[0]/1.5,maskSize[1]/1.5]
     end if
     m.borderMask.maskSize = maskSize
-    m.lgGridContentVertical.translation = [5,5]
+    ' m.lgGridContentVertical.translation = [5,5]
     if itemContent.thumbnail <> invalid and itemContent.thumbnail <> ""
         m.pVideoImage.uri = itemcontent.thumbnail
     else

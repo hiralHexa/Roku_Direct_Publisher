@@ -8,7 +8,7 @@
     </interface>
 
     <children>
-        <Poster id = "bgPoster" width = "1920" height = "1080" loadDisplayMode="scaleToFit" loadWidth= "1920" loadHeight="1080"/>
+        <Poster id = "bgPoster" width = "1920" height = "1080" loadDisplayMode="scaleToZoom" loadWidth= "1920" loadHeight="1080"/>
         <Rectangle id="rBackground" width="1920" height="1080" opacity="0.8"/>
         <Poster id="plogo" width="430" height="104" loadWidth="430" loadHeight="104" uri="pkg:/images/brand/logo.png" loadDisplayMode="scaleToFit" translation="[35,35]"/>
 
